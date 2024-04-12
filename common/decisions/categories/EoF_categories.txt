@@ -37,3 +37,15 @@ EoF_polyphony_category = {
 		has_completed_focus = EoF_polyphony
 	}
 }
+EoF_propaganda_category = {
+	icon = GFX_decision_category_generic_propaganda
+	scripted_gui = EoF_propaganda_decision_tab
+	priority = 999
+	visible = {
+		# AND = {
+		# 	has_war = yes
+		# 	tag = EQS
+		# }
+		always = yes
+	}
+}

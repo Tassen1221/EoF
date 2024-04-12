@@ -1,0 +1,8 @@
+spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
+
+	spriteType = {
+		name = "GFX_propaganda_bg"
+		textureFile = "gfx/interface/propaganda/USA_propaganda_bg.dds"
+	}
+
+}

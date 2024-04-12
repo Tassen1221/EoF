@@ -1,0 +1,14 @@
+EoF_propaganda_category = {
+	EoF_test_add = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+			add_political_power = 10
+		}
+	}
+}
