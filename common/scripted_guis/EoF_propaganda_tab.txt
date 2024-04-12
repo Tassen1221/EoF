@@ -1,11 +1,19 @@
 scripted_gui = {	
-	#island war
-	EoF_propaganda_decision_tab = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+	EoF_propaganda_decision_tab = { 
 		context_type = decision_category
 		window_name = "EoF_propaganda_decision"
+		orientation = centre
 
 		visible = {
 			always = yes
+		}
+
+		properties = {
+
+			propaganda_slot_1 = {
+				frame = EQS_poster_left_icon_frame
+			}
+
 		}
 	}
 }

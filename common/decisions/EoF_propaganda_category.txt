@@ -5,10 +5,17 @@ EoF_propaganda_category = {
 			original_tag = EQS
 		}
 		available = {
-			always = no
+			always = yes
 		}
+		days_remove = 5
 		complete_effect = {
-			add_political_power = 10
+			set_variable = { EQS_new_propaganda_campaign = 2 }
+			EQS_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { EQS_propaganda_campaign_to_remove = 2 }
+			EQS_reset_propaganda_campaign_slot_effect = yes
 		}
 	}
 }

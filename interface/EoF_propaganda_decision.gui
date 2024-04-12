@@ -12,11 +12,11 @@ guiTypes = {
 			position = { x=53 y=-14 }
 		}
 
-		# iconType = {
-		# 	name ="propaganda_1"
-		# 	spriteType = "GFX_superevent_custom_island_war"
-		# 	position = { x= 70 y = 5 }
-		# }
+		iconType = {
+			name ="propaganda_slot_1"
+			spriteType = "GFX_EQS_propaganda"
+			position = { x=20 y=-12 }
+		}
 		
 		# iconType = {
 		# 	name ="propaganda_2"
