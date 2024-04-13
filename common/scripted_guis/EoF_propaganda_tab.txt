@@ -13,7 +13,9 @@ scripted_gui = {
 			propaganda_slot_1 = {
 				frame = EQS_poster_left_icon_frame
 			}
-
+			propaganda_slot_2 = {
+				frame = EQS_poster_center_icon_frame
+			}
 		}
 	}
 }

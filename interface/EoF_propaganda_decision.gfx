@@ -1,12 +1,16 @@
-spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
+spriteTypes = { 
 
 	spriteType = {
 		name = "GFX_propaganda_bg"
 		textureFile = "gfx/interface/propaganda/USA_propaganda_bg.dds"
 	}
 	spriteType = {
+		name = "GFX_EQS_propaganda_bg"
+		textureFile = "gfx/interface/propaganda/EQS_propaganda_bg_test.dds"
+	}
+	spriteType = {
 		name = "GFX_EQS_propaganda"
-		textureFile = "gfx/interface/propaganda/GER_propaganda_strip.dds"
+		textureFile = "gfx/interface/propaganda/EQS_propaganda_strip.dds"
 		legacy_lazy_load = no
 		noOfFrames = 13
 	}
