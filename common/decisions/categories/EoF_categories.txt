@@ -37,15 +37,42 @@ EoF_polyphony_category = {
 		has_completed_focus = EoF_polyphony
 	}
 }
-EoF_propaganda_category = {
+EoF_EQS_propaganda_category = {
 	icon = GFX_decision_category_generic_propaganda
-	scripted_gui = EoF_propaganda_decision_tab
+	scripted_gui = EoF_EQS_propaganda_decision_tab
 	priority = 999
 	visible = {
-		# AND = {
-		# 	has_war = yes
-		# 	tag = EQS
-		# }
-		always = yes
+		tag = EQS
+	}
+}
+EoF_CHN_propaganda_category = {
+	icon = GFX_decision_category_generic_propaganda
+	scripted_gui = EoF_CHN_propaganda_decision_tab
+	priority = 999
+	visible = {
+		tag = CHN
+	}
+}
+EoF_STG_propaganda_category = {
+	icon = GFX_decision_category_generic_propaganda
+	scripted_gui = EoF_STG_propaganda_decision_tab
+	priority = 999
+	visible = {
+		tag = STG
+	}
+}
+EoF_MINOR_propaganda_category = {
+	icon = GFX_decision_category_generic_propaganda
+	scripted_gui = EoF_MINOR_propaganda_decision_tab
+	priority = 999
+	visible = {
+		OR = {
+			tag = CRY
+			tag = PLB
+			tag = GRF
+			tag = JER
+			tag = HIP
+		}
+		
 	}
 }

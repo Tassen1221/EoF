@@ -1,7 +1,7 @@
 scripted_gui = {	
-	EoF_propaganda_decision_tab = { 
+	EoF_EQS_propaganda_decision_tab = { 
 		context_type = decision_category
-		window_name = "EoF_propaganda_decision"
+		window_name = "EoF_EQS_propaganda_decision"
 		orientation = centre
 
 		visible = {
@@ -10,11 +10,74 @@ scripted_gui = {
 
 		properties = {
 
-			propaganda_slot_1 = {
-				frame = EQS_poster_left_icon_frame
+			EQS_propaganda_slot_1 = {
+				frame = poster_left_icon_frame
 			}
-			propaganda_slot_2 = {
-				frame = EQS_poster_center_icon_frame
+			EQS_propaganda_slot_2 = {
+				frame = poster_center_icon_frame
+			}
+		}
+	}
+}
+scripted_gui = {	
+	EoF_CHN_propaganda_decision_tab = { 
+		context_type = decision_category
+		window_name = "EoF_CHN_propaganda_decision"
+		orientation = centre
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+
+			CHN_propaganda_slot_1 = {
+				frame = poster_left_icon_frame
+			}
+			CHN_propaganda_slot_2 = {
+				frame = poster_center_icon_frame
+			}
+		}
+	}
+}
+scripted_gui = {	
+	EoF_STG_propaganda_decision_tab = { 
+		context_type = decision_category
+		window_name = "EoF_STG_propaganda_decision"
+		orientation = centre
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+
+			STG_propaganda_slot_1 = {
+				frame = poster_left_icon_frame
+			}
+			STG_propaganda_slot_2 = {
+				frame = poster_center_icon_frame
+			}
+		}
+	}
+}
+scripted_gui = {	
+	EoF_MINOR_propaganda_decision_tab = { 
+		context_type = decision_category
+		window_name = "EoF_MINOR_propaganda_decision"
+		orientation = centre
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+
+			MINOR_propaganda_slot_1 = {
+				frame = poster_left_icon_frame
+			}
+			MINOR_propaganda_slot_2 = {
+				frame = poster_center_icon_frame
 			}
 		}
 	}

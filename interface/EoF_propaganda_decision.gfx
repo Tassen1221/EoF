@@ -9,6 +9,18 @@ spriteTypes = {
 		textureFile = "gfx/interface/propaganda/EQS_propaganda_bg_test.dds"
 	}
 	spriteType = {
+		name = "GFX_CHN_propaganda_bg"
+		textureFile = "gfx/interface/propaganda/CHN_propaganda_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_STG_propaganda_bg"
+		textureFile = "gfx/interface/propaganda/STG_propaganda_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_MINOR_propaganda_bg"
+		textureFile = "gfx/interface/propaganda/MINOR_propaganda_bg.dds"
+	}
+	spriteType = {
 		name = "GFX_EQS_propaganda"
 		textureFile = "gfx/interface/propaganda/EQS_propaganda_strip.dds"
 		legacy_lazy_load = no

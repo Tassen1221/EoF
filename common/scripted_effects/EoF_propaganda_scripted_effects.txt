@@ -1,64 +1,37 @@
-EQS_pick_propaganda_campaign_slot_effect = {
+pick_propaganda_campaign_slot_effect = {
 	hidden_effect = {
 		if = {
 			limit = {
-				check_variable = { EQS_poster_left_icon_frame = EQS_propaganda_empty_slot_index }
+				check_variable = { poster_left_icon_frame = global.propaganda_empty_slot_index }
 			}
-			set_variable = { EQS_poster_left_icon_frame = EQS_new_propaganda_campaign }
-			# #Ageing posters
-			# set_variable = { EQS_propaganda_left_poster_to_age = EQS_poster_left_icon_frame } #This is used to prevent the system to break if a propaganda campaign is cancelled
+			set_variable = { poster_left_icon_frame = new_propaganda_campaign }
 		}
 		else_if = {
 			limit = {
-				check_variable = { EQS_poster_center_icon_frame = EQS_propaganda_empty_slot_index }
+				check_variable = { poster_center_icon_frame = global.propaganda_empty_slot_index }
 			}
-			set_variable = { EQS_poster_center_icon_frame = EQS_new_propaganda_campaign }
-			#Ageing posters
-			# set_variable = { EQS_propaganda_center_poster_to_age = EQS_poster_center_icon_frame } #This is used to prevent the system to break if a propaganda campaign is cancelled
+			set_variable = { poster_center_icon_frame = new_propaganda_campaign }
 		}
-		set_variable = { EQS_new_propaganda_campaign = 0 } # Reset var
-		add_to_variable = { EQS_propaganda_campaigns_taken = 1 } #Update propaganda campaigns counter
+		set_variable = { new_propaganda_campaign = 0 } # Reset var
+		add_to_variable = { propaganda_campaigns_taken = 1 } #Update propaganda campaigns counter
 	}
 }
 
-EQS_reset_propaganda_campaign_slot_effect = {
+reset_propaganda_campaign_slot_effect = {
 	hidden_effect = {
 		if = {
 			limit = {
-				check_variable = { EQS_poster_left_icon_frame = EQS_propaganda_campaign_to_remove }
+				check_variable = { poster_left_icon_frame = propaganda_campaign_to_remove }
 			}
-			set_variable = { EQS_poster_left_icon_frame = EQS_propaganda_empty_slot_index }
-			#Clear aged posters
-			clear_variable = EQS_propaganda_left_poster_to_age
-			clr_country_flag = EQS_propaganda_left_slot_is_old_flag
+			set_variable = { poster_left_icon_frame = global.propaganda_empty_slot_index }
 		}
 		else_if = {
 			limit = {
-				check_variable = { EQS_poster_center_icon_frame = EQS_propaganda_campaign_to_remove }
+				check_variable = { poster_center_icon_frame = propaganda_campaign_to_remove }
 			}
-			set_variable = { EQS_poster_center_icon_frame = EQS_propaganda_empty_slot_index }
-			#Clear aged posters
-			# clear_variable = EQS_propaganda_center_poster_to_age
-			# clr_country_flag = EQS_propaganda_center_slot_is_old_flag
+			set_variable = { poster_center_icon_frame = global.propaganda_empty_slot_index }
 		}
-		set_variable = { EQS_propaganda_campaign_to_remove = 0 } # Reset var
-		subtract_from_variable = { EQS_propaganda_campaigns_taken = 1}
+		set_variable = { propaganda_campaign_to_remove = 0 } # Reset var
+		subtract_from_variable = { propaganda_campaigns_taken = 1}
 	}
 }
-
-# EQS_unlock_propaganda_campaign_slot_effect = {
-# 	hidden_effect = {
-# 		if = {
-# 			limit = {
-# 				check_variable = { EQS_poster_left_icon_frame = EQS_propaganda_locked_slot_index }
-# 			}
-# 			set_variable = { EQS_poster_left_icon_frame = EQS_propaganda_empty_slot_index }
-# 		}
-# 		else_if = {
-# 			limit = {
-# 				check_variable = { EQS_poster_center_icon_frame = EQS_propaganda_locked_slot_index }
-# 			}
-# 			set_variable = { EQS_poster_center_icon_frame = EQS_propaganda_empty_slot_index }
-# 		}
-# 	}
-# }

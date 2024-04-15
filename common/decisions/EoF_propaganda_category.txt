@@ -1,65 +1,603 @@
-EoF_propaganda_category = {
-	EoF_test_add = {
+EoF_EQS_propaganda_category = {
+	EoF_summersun_celebration = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			original_tag = EQS
 		}
 		available = {
 			check_variable = {
-				EQS_propaganda_campaigns_taken < 2
+				propaganda_campaigns_taken < 2
 			}
 		}
-		days_remove = 5
+		cost = 50
+		days_remove = 180
 		complete_effect = {
-			set_variable = { EQS_new_propaganda_campaign = 2 }
-			EQS_pick_propaganda_campaign_slot_effect = yes
+			set_variable = { new_propaganda_campaign = 4 }
+			pick_propaganda_campaign_slot_effect = yes
 		}
-
+		modifier = {
+			stability_weekly = 0.002
+		}
 		remove_effect = {
-			set_variable = { EQS_propaganda_campaign_to_remove = 2 }
-			EQS_reset_propaganda_campaign_slot_effect = yes
+			set_variable = { propaganda_campaign_to_remove = 4 }
+			reset_propaganda_campaign_slot_effect = yes
 		}
 	}
-	EoF_test_add_2 = {
+	EoF_industrial_expansion = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			original_tag = EQS
 		}
 		available = {
 			check_variable = {
-				EQS_propaganda_campaigns_taken < 2
+				propaganda_campaigns_taken < 2
 			}
 		}
-		days_remove = 5
+		cost = 100
+		days_remove = 180
 		complete_effect = {
-			set_variable = { EQS_new_propaganda_campaign = 3 }
-			EQS_pick_propaganda_campaign_slot_effect = yes
+			set_variable = { new_propaganda_campaign = 6 }
+			pick_propaganda_campaign_slot_effect = yes
 		}
-
+		modifier = {
+			consumer_goods_factor = 0.05
+			production_speed_industrial_complex_factor  = 0.1
+		}
 		remove_effect = {
-			set_variable = { EQS_propaganda_campaign_to_remove = 3 }
-			EQS_reset_propaganda_campaign_slot_effect = yes
+			set_variable = { propaganda_campaign_to_remove = 6 }
+			reset_propaganda_campaign_slot_effect = yes
 		}
 	}
-	EoF_test_add_3 = {
+	EoF_united_workforce = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			original_tag = EQS
 		}
 		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				NOT = {
+					has_idea = EQS_bat_pony_divide_1
+				}
+			}
+		}
+		cost = 100
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 7 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			stability_factor = 0.1
+			consumer_goods_factor = -0.07
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 7 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_wartime_rationing = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+			}
+		}
+		cost = 100
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 9 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 9 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_prevent_changeling_espionage = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_completed_focus = Extreme_war_comittee
+				has_intelligence_agency = yes
+			}
+		}
+		cost = 50
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 5 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			crypto_strength = 10
+			intelligence_agency_defense = 2.5
+			civilian_intel_to_others = -25
+			army_intel_to_others = -25
+			airforce_intel_to_others = -25
+			navy_intel_to_others = -25
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 5 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_wartime_production = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_completed_focus = Extreme_war_comittee
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 2 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			industrial_capacity_factory = 0.1
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 2 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_conscription_drive = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_completed_focus = Extreme_war_comittee
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 3 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			conscription = 0.02
+			mobilization_speed = 1
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 3 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_changeling_menace = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_completed_focus = Extreme_war_comittee
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 8 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		targeted_modifier = {
+			tag = CHN
+			attack_bonus_against = 0.05
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 8 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_wonderbolt_acrobats = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				EQS_rainbowdash = {
+					is_hired_as_advisor = yes
+				}
+			}
+		}
+		cost = 120
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 10 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			experience_gain_air = 0.15
+			air_agility_factor = 0.1
+			air_mission_efficiency = 0.15
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 10 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_united_front = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_completed_focus = EoF_all_equestrian_army
+				has_war = yes
+			}
+		}
+		cost = 200
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 11 }
+			pick_propaganda_campaign_slot_effect = yes
+			hidden_effect = {
+				CRY ={
+					add_timed_idea = {
+						idea = EoF_united_front
+						days = 180
+					}
+				}
+				STG = {
+					add_timed_idea = {
+						idea = EoF_united_front
+						days = 180
+					}
+				}
+				HIP = {
+					add_timed_idea = {
+						idea = EoF_united_front
+						days = 180
+					}
+				}
+				EQC = {
+					add_timed_idea = {
+						idea = EoF_united_front
+						days = 180
+					}
+				}
+			}
+			custom_effect_tooltip = EoF_united_front_tt
+		}
+		targeted_modifier = {
+			tag = CHN
+			attack_bonus_against = 0.05
+			defense_bonus_against = 0.05
+		}
+		targeted_modifier = {
+			tag = PLB
+			attack_bonus_against = 0.05
+			defense_bonus_against = 0.05
+		}
+		targeted_modifier = {
+			tag = GRF
+			attack_bonus_against = 0.05
+			defense_bonus_against = 0.05
+		}
+		targeted_modifier = {
+			tag = JER
+			attack_bonus_against = 0.05
+			defense_bonus_against = 0.05
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 11 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_obey_the_princesss = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_completed_focus = Extreme_war_comittee
+				has_war = yes
+				surrender_progress > 0.4
+			}
+		}
+		cost = 200
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 12 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			stability_factor = -0.3
+			war_support_factor = 0.3
+			conscription = 0.05
+			industrial_capacity_factory = 0.08
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 12 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_support_resistance = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = EQS
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_completed_focus = Extreme_war_comittee
+				has_war = yes
+			}
+		}
+		cost = 150
+		days_remove = 180
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 13 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			resistance_growth_on_our_occupied_states = 0.15
+			resistance_damage_to_garrison_on_our_occupied_states = 0.15
+		}
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 13 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+}
+EoF_CHN_propaganda_category = {
+	EoF_CHN_test_add = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = CHN
+		}
+		available = {
 			check_variable = {
-				EQS_propaganda_campaigns_taken < 2
+				propaganda_campaigns_taken < 2
 			}
 		}
 		days_remove = 5
 		complete_effect = {
-			set_variable = { EQS_new_propaganda_campaign = 4 }
-			EQS_pick_propaganda_campaign_slot_effect = yes
+			set_variable = { new_propaganda_campaign = 2 }
+			pick_propaganda_campaign_slot_effect = yes
 		}
 
 		remove_effect = {
-			set_variable = { EQS_propaganda_campaign_to_remove = 4 }
-			EQS_reset_propaganda_campaign_slot_effect = yes
+			set_variable = { propaganda_campaign_to_remove = 2 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_CHN_test_add_2 = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = CHN
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		days_remove = 5
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 3 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 3 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_CHN_test_add_3 = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = CHN
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		days_remove = 5
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 4 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 4 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+}
+EoF_STG_propaganda_category = {
+	EoF_STG_test_add = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = STG
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		days_remove = 5
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 2 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 2 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_STG_test_add_2 = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = STG
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		days_remove = 5
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 3 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 3 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_STG_test_add_3 = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = STG
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		days_remove = 5
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 4 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 4 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+}
+EoF_MINOR_propaganda_category = {
+	EoF_MINOR_test_add = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		days_remove = 5
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 2 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 2 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_MINOR_test_add_2 = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		days_remove = 5
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 3 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 3 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_MINOR_test_add_3 = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		days_remove = 5
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 4 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 4 }
+			reset_propaganda_campaign_slot_effect = yes
 		}
 	}
 }

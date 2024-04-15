@@ -14,6 +14,11 @@ on_actions = {
 			}
 		}
 	}
+
+	on_startup = {
+		set_variable = { global.propaganda_empty_slot_index = 1}
+	}
+
 	#All Starting Dynamic Modifiers Here
 	on_startup = {
 		effect = {

@@ -95,6 +95,31 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 			}
 		}
+	
+		EoF_united_front = {
+			removal_cost = -1
+			picture = MEX_politicised_army
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = PLB
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = GRF
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = JER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
 	}
 	hidden_ideas = {
 		EoF_continuous_infantry_production = {
@@ -107,4 +132,5 @@ ideas = {
 			}
 		}
 	}
+	
 }
