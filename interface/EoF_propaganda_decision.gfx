@@ -26,5 +26,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 13
 	}
-
+	spriteType = {
+		name = "GFX_CHN_propaganda"
+		textureFile = "gfx/interface/propaganda/CHN_propaganda_strip.dds"
+		legacy_lazy_load = no
+		noOfFrames = 13
+	}
 }

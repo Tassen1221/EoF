@@ -120,6 +120,72 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
+
+		EoF_their_finest_hour_idea = {
+			removal_cost = -1
+			picture = HIP_AF_harmony_ab
+			modifier = {
+				offence = 0.1
+				planning_speed = 1
+				army_speed_factor = 0.1
+			}
+		}
+
+		EoF_we_can_do_it = {
+			removal_cost = -1
+			picture = NLR_workers0_idea
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+        			build_cost_ic = -0.2
+				}
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				support_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				heavy_artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				heavy_anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+
+		EoF_support_our_allies = {
+			removal_cost = -1
+			picture = MEX_politicised_army
+			targeted_modifier = {
+				tag = EQS
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = CRY
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = HIP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
 	}
 	hidden_ideas = {
 		EoF_continuous_infantry_production = {

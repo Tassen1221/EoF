@@ -45,13 +45,13 @@ guiTypes = {
 
 		iconType = {
 			name ="CHN_propaganda_slot_1"
-			spriteType = "GFX_EQS_propaganda"
+			spriteType = "GFX_CHN_propaganda"
 			position = { x=20 y=-12 }
 		}
 		
 		iconType = {
 			name ="CHN_propaganda_slot_2"
-			spriteType = "GFX_EQS_propaganda"
+			spriteType = "GFX_CHN_propaganda"
 			position = { x=243 y=-12 }
 		}
 	}
