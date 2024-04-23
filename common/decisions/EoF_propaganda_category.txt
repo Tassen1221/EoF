@@ -699,49 +699,72 @@ EoF_CHN_propaganda_category = {
 	}
 }
 EoF_STG_propaganda_category = {
-	EoF_STG_test_add = {
+	EoF_our_dear_leader = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			original_tag = STG
 		}
 		available = {
-			check_variable = {
-				propaganda_campaigns_taken < 2
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				OR = {
+					has_completed_focus = vasya_leader
+					has_completed_focus = sinister_leader
+				}
 			}
 		}
-		days_remove = 5
+		cost = 80
+		days_remove = 120
 		complete_effect = {
 			set_variable = { new_propaganda_campaign = 2 }
 			pick_propaganda_campaign_slot_effect = yes
 		}
-
+		modifier = {
+			stability_factor = 0.15
+			political_power_gain = 0.1
+		}
+		days_re_enable = 180
 		remove_effect = {
 			set_variable = { propaganda_campaign_to_remove = 2 }
 			reset_propaganda_campaign_slot_effect = yes
 		}
 	}
-	EoF_STG_test_add_2 = {
+	EoF_industralise_our_lands = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			original_tag = STG
 		}
 		available = {
-			check_variable = {
-				propaganda_campaigns_taken < 2
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				OR = {
+					has_completed_focus = vasya_leader
+					has_completed_focus = sinister_leader
+				}
 			}
 		}
-		days_remove = 5
+		cost = 100
+		days_remove = 100
 		complete_effect = {
 			set_variable = { new_propaganda_campaign = 3 }
 			pick_propaganda_campaign_slot_effect = yes
 		}
-
+		modifier = {
+			stability_factor = -0.1
+			consumer_goods_factor = -0.08
+			local_resources_factor = 0.1
+		}
+		days_re_enable = 180
 		remove_effect = {
 			set_variable = { propaganda_campaign_to_remove = 3 }
 			reset_propaganda_campaign_slot_effect = yes
 		}
 	}
-	EoF_STG_test_add_3 = {
+	EoF_new_stalliongrad_pony = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			original_tag = STG
@@ -751,14 +774,103 @@ EoF_STG_propaganda_category = {
 				propaganda_campaigns_taken < 2
 			}
 		}
-		days_remove = 5
+		cost = 120
+		days_remove = 100
 		complete_effect = {
 			set_variable = { new_propaganda_campaign = 4 }
 			pick_propaganda_campaign_slot_effect = yes
 		}
-
+		modifier = {
+			political_power_factor = 0.1
+			production_speed_buildings_factor = 0.05
+		}
+		days_re_enable = 180
 		remove_effect = {
 			set_variable = { propaganda_campaign_to_remove = 4 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_literacy_campaign = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = STG
+		}
+		available = {
+			check_variable = {
+				propaganda_campaigns_taken < 2
+			}
+		}
+		cost = 120
+		days_remove = 100
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 5 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			research_speed_factor = 0.08
+		}
+		days_re_enable = 180
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 5 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_STG_wartime_rationing = { ##GENERICO
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = STG
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 7 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			consumer_goods_factor = -0.08
+			stability_factor = -0.08
+			industrial_capacity_factory = 0.05
+		}
+		days_re_enable = 120
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 7 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_STG_we_can_do_it = { ###GENERICO
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = STG
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 8 }
+			pick_propaganda_campaign_slot_effect = yes
+			add_timed_idea = {
+				idea = EoF_we_can_do_it
+				days = 120
+			}
+		}
+		days_re_enable = 120
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 8 }
 			reset_propaganda_campaign_slot_effect = yes
 		}
 	}

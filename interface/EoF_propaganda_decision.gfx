@@ -32,4 +32,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 13
 	}
+	spriteType = {
+		name = "GFX_STG_propaganda"
+		textureFile = "gfx/interface/propaganda/STG_propaganda_strip.dds"
+		legacy_lazy_load = no
+		noOfFrames = 13
+	}
 }

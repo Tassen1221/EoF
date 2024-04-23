@@ -74,13 +74,13 @@ guiTypes = {
 
 		iconType = {
 			name ="STG_propaganda_slot_1"
-			spriteType = "GFX_EQS_propaganda"
+			spriteType = "GFX_STG_propaganda"
 			position = { x=20 y=-12 }
 		}
 		
 		iconType = {
 			name ="STG_propaganda_slot_2"
-			spriteType = "GFX_EQS_propaganda"
+			spriteType = "GFX_STG_propaganda"
 			position = { x=243 y=-12 }
 		}
 	}
