@@ -815,6 +815,34 @@ EoF_STG_propaganda_category = {
 			reset_propaganda_campaign_slot_effect = yes
 		}
 	}
+	EoF_MINOR_industrial_buildup = { ####GENERICO
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = STG
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+			}
+		}
+		cost = 100
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 6 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			consumer_goods_factor = -0.08
+			production_speed_buildings_factor = 0.08
+		}
+		days_re_enable = 120
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 6 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
 	EoF_STG_wartime_rationing = { ##GENERICO
 		icon = GFX_decision_generic_naval
 		allowed = {
@@ -839,7 +867,7 @@ EoF_STG_propaganda_category = {
 			stability_factor = -0.08
 			industrial_capacity_factory = 0.05
 		}
-		days_re_enable = 120
+		days_re_enable = 180
 		remove_effect = {
 			set_variable = { propaganda_campaign_to_remove = 7 }
 			reset_propaganda_campaign_slot_effect = yes
@@ -868,7 +896,7 @@ EoF_STG_propaganda_category = {
 				days = 120
 			}
 		}
-		days_re_enable = 120
+		days_re_enable = 180
 		remove_effect = {
 			set_variable = { propaganda_campaign_to_remove = 8 }
 			reset_propaganda_campaign_slot_effect = yes
@@ -876,7 +904,7 @@ EoF_STG_propaganda_category = {
 	}
 }
 EoF_MINOR_propaganda_category = {
-	EoF_MINOR_test_add = {
+	EoF_defend_our_air = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			OR = {
@@ -888,22 +916,37 @@ EoF_MINOR_propaganda_category = {
 			}
 		}
 		available = {
-			check_variable = {
-				propaganda_campaigns_taken < 2
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_war = yes
 			}
 		}
-		days_remove = 5
+		cost = 100
+		days_remove = 120
 		complete_effect = {
 			set_variable = { new_propaganda_campaign = 2 }
 			pick_propaganda_campaign_slot_effect = yes
+			add_timed_idea = {
+				idea = EoF_MINOR_defend_our_air
+				days = 120
+			}
 		}
-
+		modifier = {
+			air_intercept_efficiency = 0.3
+			air_interception_detect_factor = 0.3
+			static_anti_air_damage_factor = 0.15
+			static_anti_air_hit_chance_factor = 0.8
+			cas_damage_reduction = 0.1
+		}
+		days_re_enable = 180
 		remove_effect = {
 			set_variable = { propaganda_campaign_to_remove = 2 }
 			reset_propaganda_campaign_slot_effect = yes
 		}
 	}
-	EoF_MINOR_test_add_2 = {
+	EoF_our_victorious_pilots = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			OR = {
@@ -915,22 +958,32 @@ EoF_MINOR_propaganda_category = {
 			}
 		}
 		available = {
-			check_variable = {
-				propaganda_campaigns_taken < 2
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_war = yes
 			}
 		}
-		days_remove = 5
+		cost = 100
+		days_remove = 120
 		complete_effect = {
 			set_variable = { new_propaganda_campaign = 3 }
 			pick_propaganda_campaign_slot_effect = yes
+			air_experience = 20
 		}
-
+		modifier = {
+			air_attack_factor = 0.08
+			air_defence_factor = 0.08
+			air_ace_generation_chance_factor = 0.1
+		}
+		days_re_enable = 180
 		remove_effect = {
 			set_variable = { propaganda_campaign_to_remove = 3 }
 			reset_propaganda_campaign_slot_effect = yes
 		}
 	}
-	EoF_MINOR_test_add_3 = {
+	EoF_keep_em_rolling = {
 		icon = GFX_decision_generic_naval
 		allowed = {
 			OR = {
@@ -942,18 +995,244 @@ EoF_MINOR_propaganda_category = {
 			}
 		}
 		available = {
-			check_variable = {
-				propaganda_campaigns_taken < 2
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
 			}
 		}
-		days_remove = 5
+		cost = 100
+		days_remove = 120
 		complete_effect = {
 			set_variable = { new_propaganda_campaign = 4 }
 			pick_propaganda_campaign_slot_effect = yes
+			add_timed_idea = {
+				idea = EoF_MINOR_keep_em_rolling
+				days = 120
+			}
 		}
-
+		modifier = {
+			production_speed_rail_way_factor = 0.15
+		}
+		days_re_enable = 180
 		remove_effect = {
 			set_variable = { propaganda_campaign_to_remove = 4 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_war_stamps = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 5 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+			industrial_capacity_factory = 0.08
+		}
+		days_re_enable = 180
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 5 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_MINOR_industrial_buildup = { ####GENERICO
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+			}
+		}
+		cost = 100
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 6 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			consumer_goods_factor = -0.08
+			production_speed_buildings_factor = 0.08
+		}
+		days_re_enable = 120
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 6 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_someone_talked = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_intelligence_agency = yes
+			}
+		}
+		cost = 50
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 7 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			crypto_strength = 10
+			intelligence_agency_defense = 2.5
+			civilian_intel_to_others = -25
+			army_intel_to_others = -25
+			airforce_intel_to_others = -25
+			navy_intel_to_others = -25
+			convoy_retreat_speed = 0.1
+		}
+		days_re_enable = 120
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 7 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_bearers_of_artillery = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 8 }
+			pick_propaganda_campaign_slot_effect = yes
+			army_experience = 10
+		}
+		modifier = {
+			army_artillery_attack_factor = 0.08
+			army_artillery_defence_factor = 0.08
+		}
+		days_re_enable = 180
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 8 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_MINOR_wartime_rationing = { ##GENERICO
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 9 }
+			pick_propaganda_campaign_slot_effect = yes
+		}
+		modifier = {
+			consumer_goods_factor = -0.08
+			stability_factor = -0.08
+			industrial_capacity_factory = 0.05
+		}
+		days_re_enable = 120
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 9 }
+			reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	EoF_MINOR_we_can_do_it = { ###GENERICO
+		icon = GFX_decision_generic_naval
+		allowed = {
+			OR = {
+				tag = CRY
+				tag = PLB
+				tag = GRF
+				tag = JER
+				tag = HIP
+			}
+		}
+		available = {
+			AND = {
+				check_variable = {
+					propaganda_campaigns_taken < 2
+				}
+				has_war = yes
+			}
+		}
+		cost = 100
+		days_remove = 120
+		complete_effect = {
+			set_variable = { new_propaganda_campaign = 10 }
+			pick_propaganda_campaign_slot_effect = yes
+			add_timed_idea = {
+				idea = EoF_we_can_do_it
+				days = 120
+			}
+		}
+		days_re_enable = 120
+		remove_effect = {
+			set_variable = { propaganda_campaign_to_remove = 10 }
 			reset_propaganda_campaign_slot_effect = yes
 		}
 	}

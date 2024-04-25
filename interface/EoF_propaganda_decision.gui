@@ -103,13 +103,13 @@ guiTypes = {
 
 		iconType = {
 			name ="MINOR_propaganda_slot_1"
-			spriteType = "GFX_EQS_propaganda"
+			spriteType = "GFX_MINOR_propaganda"
 			position = { x=20 y=-12 }
 		}
 		
 		iconType = {
 			name ="MINOR_propaganda_slot_2"
-			spriteType = "GFX_EQS_propaganda"
+			spriteType = "GFX_MINOR_propaganda"
 			position = { x=243 y=-12 }
 		}
 	}
