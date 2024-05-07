@@ -167,7 +167,7 @@ EoF_EQS_propaganda_category = {
 			pick_propaganda_campaign_slot_effect = yes
 		}
 		modifier = {
-			industrial_capacity_factory = 0.05
+			industrial_capacity_factory = 0.03
 			stability_factor = 0.08
 		}
 		days_re_enable = 120
@@ -228,7 +228,7 @@ EoF_EQS_propaganda_category = {
 		modifier = {
 			consumer_goods_factor = -0.08
 			stability_factor = -0.08
-			industrial_capacity_factory = 0.05
+			industrial_capacity_factory = 0.03
 		}
 		days_re_enable = 120
 		remove_effect = {
@@ -478,7 +478,7 @@ EoF_CHN_propaganda_category = {
 		}
 		modifier = {
 			production_lack_of_resource_penalty_factor = -0.25
-			industrial_capacity_factory = 0.05
+			industrial_capacity_factory = 0.03
 			consumer_goods_factor = 0.05
 		}
 		days_re_enable = 180
@@ -565,7 +565,7 @@ EoF_CHN_propaganda_category = {
 		modifier = {
 			consumer_goods_factor = -0.08
 			stability_factor = -0.08
-			industrial_capacity_factory = 0.05
+			industrial_capacity_factory = 0.03
 		}
 		days_re_enable = 120
 		remove_effect = {
@@ -865,7 +865,7 @@ EoF_STG_propaganda_category = {
 		modifier = {
 			consumer_goods_factor = -0.08
 			stability_factor = -0.08
-			industrial_capacity_factory = 0.05
+			industrial_capacity_factory = 0.03
 		}
 		days_re_enable = 180
 		remove_effect = {
@@ -913,6 +913,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
@@ -955,6 +957,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
@@ -992,6 +996,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
@@ -1029,6 +1035,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
@@ -1047,7 +1055,7 @@ EoF_MINOR_propaganda_category = {
 		}
 		modifier = {
 			consumer_goods_factor = -0.1
-			industrial_capacity_factory = 0.08
+			industrial_capacity_factory = 0.03
 		}
 		days_re_enable = 180
 		remove_effect = {
@@ -1064,6 +1072,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
@@ -1098,6 +1108,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
@@ -1138,6 +1150,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
@@ -1174,6 +1188,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
@@ -1193,7 +1209,7 @@ EoF_MINOR_propaganda_category = {
 		modifier = {
 			consumer_goods_factor = -0.08
 			stability_factor = -0.08
-			industrial_capacity_factory = 0.05
+			industrial_capacity_factory = 0.03
 		}
 		days_re_enable = 120
 		remove_effect = {
@@ -1210,6 +1226,8 @@ EoF_MINOR_propaganda_category = {
 				tag = GRF
 				tag = JER
 				tag = HIP
+				tag = WNG
+				tag = FAT
 			}
 		}
 		available = {
