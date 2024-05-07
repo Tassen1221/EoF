@@ -75,6 +75,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -88,6 +90,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -101,6 +105,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -156,7 +162,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 2
+			count < 3
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -179,11 +185,23 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = special_ammunition
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_simplification_module
 			count < 2
 		}
 		module_count_limit = {
 			category = tank_cupola_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_coaxial_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 		default_modules = {
@@ -200,6 +218,7 @@ equipments = {
 		reliability = 0.75
 		hardness = 0.5
 		armor_value = 10
+		defense = 6
 		resources = {
 			steel = 1
 		}
@@ -258,6 +277,34 @@ equipments = {
 		resources = {
 			steel = 1
 		}
+
+		module_slots = {
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_special_module_maintenance
+					tank_special_module_stabilizer
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_special_module_maintenance
+					tank_special_module_stabilizer
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+		}
 	}
 
 	light_tank_chassis_3 = {
@@ -293,6 +340,32 @@ equipments = {
 			}
 
 			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_special_module_maintenance
+					tank_special_module_stabilizer
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_special_module_maintenance
+					tank_special_module_stabilizer
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_7 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -414,6 +487,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -427,6 +502,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -440,6 +517,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -457,7 +536,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
-			count < 3 #two secondary turrets only
+			count < 2
 		}
 		module_count_limit = {
 			module = amphibious_drive
@@ -493,7 +572,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 2
+			count < 3
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -516,11 +595,23 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = special_ammunition
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_simplification_module
 			count < 2
 		}
 		module_count_limit = {
 			category = tank_cupola_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_coaxial_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 		default_modules = {
@@ -536,6 +627,7 @@ equipments = {
 		build_cost_ic = 2
 		reliability = 0.75
 		armor_value = 20
+		defense = 6
 		hardness = 0.6
 		resources = {
 			steel = 1
@@ -608,6 +700,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -621,6 +715,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -706,6 +802,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -719,6 +817,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -732,6 +832,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -745,6 +847,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -758,6 +862,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -771,6 +877,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -784,6 +892,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -865,6 +975,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -878,6 +990,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -891,6 +1005,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -904,6 +1020,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_secondary_turret
 			count < 2
 		}
 
@@ -941,7 +1061,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 2
+			count < 3
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -964,11 +1084,23 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = special_ammunition
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_simplification_module
 			count < 2
 		}
 		module_count_limit = {
 			category = tank_cupola_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_coaxial_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 		default_modules = {
@@ -981,9 +1113,10 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 3
-		build_cost_ic = 8
+		build_cost_ic = 10
 		reliability = 0.75
 		armor_value = 35
+		defense = 6
 		hardness = 0.9
 		resources = {
 			steel = 1
@@ -1008,7 +1141,7 @@ equipments = {
 			tank_nsb_gun_upgrade
 		}
 		maximum_speed = 3
-		build_cost_ic = 8
+		build_cost_ic = 10
 		reliability = 0.75
 		armor_value = 35
 	}
@@ -1024,7 +1157,7 @@ equipments = {
 		module_slots = inherit
 		armor_value = 50
 		maximum_speed = 4
-		build_cost_ic = 8
+		build_cost_ic = 10
 		reliability = 0.8
 	}
 
@@ -1037,7 +1170,7 @@ equipments = {
 		parent = heavy_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 10
+		build_cost_ic = 12
 		maximum_speed = 4
 		reliability = 1
 		armor_value = 75
@@ -1054,6 +1187,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1067,6 +1202,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1084,7 +1221,7 @@ equipments = {
 		archetype = heavy_tank_chassis
 		parent = heavy_tank_chassis_2
 		priority = 2000
-		build_cost_ic = 12
+		build_cost_ic = 14
 		maximum_speed = 4
 		reliability = 1.2
 		armor_value = 100
@@ -1156,6 +1293,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1169,6 +1308,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1182,6 +1323,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1195,6 +1338,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1208,6 +1353,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1221,6 +1368,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1234,6 +1383,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1317,6 +1468,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1329,6 +1482,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1341,6 +1496,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1353,6 +1510,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1365,6 +1524,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1377,6 +1538,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1389,6 +1552,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1438,7 +1603,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 2
+			count < 3
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -1461,11 +1626,23 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = special_ammunition
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_simplification_module
 			count < 2
 		}
 		module_count_limit = {
 			category = tank_cupola_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_coaxial_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 
@@ -1482,6 +1659,7 @@ equipments = {
 		build_cost_ic = 6
 		reliability = 1.4
 		armor_value = 90
+		defense = 6
 		breakthrough = 12
 		hardness = 0.9
 		resources = {
@@ -1619,6 +1797,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1632,6 +1812,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1645,6 +1827,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1658,6 +1842,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1671,6 +1857,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1684,6 +1872,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1697,6 +1887,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1710,6 +1902,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_secondary_turret
 			count < 2
 		}
 		module_count_limit = {
@@ -1746,7 +1942,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 2
+			count < 3
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -1769,11 +1965,23 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = special_ammunition
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_simplification_module
 			count < 2
 		}
 		module_count_limit = {
 			category = tank_cupola_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_coaxial_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 		default_modules = {
@@ -1789,6 +1997,7 @@ equipments = {
 		build_cost_ic = 40
 		reliability = 1
 		armor_value = 120
+		defense = 6
 		breakthrough = 12
 		hardness = 1.0
 		
@@ -1924,6 +2133,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1936,6 +2147,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1948,6 +2161,8 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_maintenance
 					tank_special_module_skirts
@@ -1997,7 +2212,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 2
+			count < 3
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -2020,11 +2235,23 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = special_ammunition
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_simplification_module
 			count < 2
 		}
 		module_count_limit = {
 			category = tank_cupola_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_coaxial_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rocket_module
 			count < 2
 		}
 
@@ -2041,6 +2268,7 @@ equipments = {
 		build_cost_ic = 4
 		reliability = 0.8
 		armor_value = 15
+		defense = 6
 		breakthrough = 4
 		hardness = 0.6
 		resources = {

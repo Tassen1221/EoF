@@ -1,0 +1,34 @@
+ideas = {
+	economy = {
+		law = yes
+		use_list_view = yes
+		STG_economic_policy = {
+
+			picture = new_economic_policy
+
+			allowed = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				industrial_capacity_factory = 0.1
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 0
+   			}
+		}
+	}
+}
+		

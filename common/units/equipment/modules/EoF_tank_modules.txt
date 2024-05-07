@@ -49,7 +49,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			maximum_speed = -0.6
-			build_cost_ic = 5
+			build_cost_ic = 7
 			breakthrough = 18
 		}
 		multiply_stats = {
@@ -202,6 +202,46 @@ equipment_modules = {
 		}
 		xp_cost = 0
 	}
+	tank_periscope_optics_1 = {
+		abbreviation = "popt1"
+		category = tank_optics_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			flame
+			amphibious
+		}
+		multiply_stats = {
+			soft_attack = 0.15
+			breakthrough = -0.5
+		}
+		add_stats = {
+			build_cost_ic = 0.5
+		}
+		xp_cost = 0
+	}
+	tank_periscope_optics_2 = {
+		abbreviation = "popt2"
+		category = tank_optics_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			flame
+			amphibious
+		}
+		multiply_stats = {
+			soft_attack = 0.25
+			breakthrough = -0.5
+		}
+		add_stats = {
+			build_cost_ic = 1
+		}
+		xp_cost = 0
+	}
 	wartime_simplification_steel = {
 		abbreviation = "simps"
 		category = tank_simplification_module
@@ -244,20 +284,34 @@ equipment_modules = {
 		}
 		xp_cost = 50
 	}
+	wartime_simplification_general = {
+		abbreviation = "simpg"
+		category = tank_simplification_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats ={
+			reliability = 0.1			
+		}
+		multiply_stats = {
+			build_cost_ic = -0.075
+		}
+		xp_cost = 50
+	}
 	secondary_turret_autocannon = {
 		abbreviation = "tac"
 		category = tank_secondary_turret
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 1
-			hard_attack = 1
-			build_cost_ic = 1.5
+			soft_attack = 4
+			hard_attack = 0.5
+			build_cost_ic = 3
 			reliability = -0.1
 			maximum_speed = -0.5
 		}
 		xp_cost = 0
 		multiply_stats = {
+			build_cost_ic = 0.1
 		}
 	}
 	cupola_1 = {
@@ -271,7 +325,7 @@ equipment_modules = {
 		xp_cost = 0
 		multiply_stats = {
 			defense = 0.2
-			breakthrough = 0.05
+			breakthrough = 0.1
 		}
 	}
 	cupola_2 = {
@@ -285,7 +339,7 @@ equipment_modules = {
 		xp_cost = 0
 		multiply_stats = {
 			defense = 0.3
-			breakthrough = 0.1
+			breakthrough = 0.15
 		}
 	}
 	cupola_3 = {
@@ -299,7 +353,7 @@ equipment_modules = {
 		xp_cost = 0
 		multiply_stats = {
 			defense = 0.4
-			breakthrough = 0.15
+			breakthrough = 0.2
 		}
 	}
 	spall_liner = {
@@ -316,6 +370,96 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.05
 		}
+	}
+	special_ammunition = {
+		abbreviation = "apcr"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		xp_cost = 0
+		multiply_stats = {
+			ap_attack = 0.1
+		}
+		build_cost_resources = {
+			tungsten = 1
+		}	
+	}
+	ventilation_system = {
+		abbreviation = "vent"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		xp_cost = 0
+		add_stats = {
+			max_organisation = 0.1
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			breakthrough = 0.05
+		}
+	}
+	coaxial_lmg = {
+		abbreviation = "colmg"
+		category = tank_coaxial_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 3
+			hard_attack = 0.5
+			build_cost_ic = 0.5
+		}
+		xp_cost = 0
+	}
+	coaxial_hmg = {
+		abbreviation = "cohmg"
+		category = tank_coaxial_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 4
+			hard_attack = 1
+			build_cost_ic = 1
+		}
+		xp_cost = 0
+	}
+	coaxial_autocannon = {
+		abbreviation = "coauto"
+		category = tank_coaxial_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 5
+			hard_attack = 1.5
+			build_cost_ic = 3
+			reliability = -0.1
+		}
+		xp_cost = 0
+	}
+	coaxial_small_cannon = {
+		abbreviation = "cosc"
+		category = tank_coaxial_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 3
+			hard_attack = 3
+			build_cost_ic = 3
+			reliability = -0.1
+		}
+		xp_cost = 0
+	}
+	coaxial_close_support_gun = {
+		abbreviation = "cocsg"
+		category = tank_coaxial_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 5
+			hard_attack = 3
+			build_cost_ic = 5
+			reliability = -0.2
+		}
+		xp_cost = 0
 	}
 }
 

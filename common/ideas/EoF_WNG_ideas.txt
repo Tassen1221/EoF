@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		EoF_WNG_treaty = {
+			removal_cost = -1
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				army_core_attack_factor = 2
+				army_core_defence_factor = 2
+			}		
+		}
+		EoF_WNG_militarization = {
+			removal_cost = -1
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				mobilization_speed = 1.0
+				training_time_army_factor = -0.5
+				conversion_cost_civ_to_mil_factor = -0.7
+				production_speed_arms_factory_factor = 0.5
+				production_factory_efficiency_gain_factor = 0.5
+			}				
+		}
+	}
+}

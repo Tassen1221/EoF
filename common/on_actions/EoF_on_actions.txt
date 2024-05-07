@@ -2,7 +2,7 @@ on_actions = {
 	on_startup = {
 		effect = {
 			HLR = {
-				country_event = { id = EoF.1 days = 1460 }
+				country_event = { id = EoF.1 days = 1095 }
 				country_event = { id = EoF.8 days = 10 }
 				news_event = { id = EoF.news.1 days = 10 }
 			}
@@ -10,7 +10,8 @@ on_actions = {
 				country_event = { id = northern_protectorate.99 }
 			}
 			CHN = {
-				country_event = { id = EoF.7 days = 2190}
+				country_event = { id = EoF_great_war.7 days = 1764 }
+				country_event = { id = EoF.7 days = 2190 }
 			}
 		}
 	}
@@ -23,43 +24,67 @@ on_actions = {
 	on_startup = {
 		effect = {
 			381 = {
-				set_state_flag = EQS_controls
+				set_state_flag = SOUTH_controls_0
 			}
 			390 = {
-				set_state_flag = EQS_controls
+				set_state_flag = SOUTH_controls_0
 			}
 			658 = {
-				set_state_flag = EQS_controls
+				set_state_flag = SOUTH_controls_0
 			}
 			660 = {
-				set_state_flag = EQS_controls
+				set_state_flag = SOUTH_controls_0
 			}
 			659 = {
-				set_state_flag = EQS_controls
+				set_state_flag = SOUTH_controls_0
 			}
 			1209 = {
-				set_state_flag = EQS_controls
+				set_state_flag = SOUTH_controls_0
 			}
 			333 = {
-				set_state_flag = EQS_controls
+				set_state_flag = SOUTH_controls_0
 			}
 			67 = {
-				set_state_flag = EQS_controls
+				set_state_flag = SOUTH_controls_0
 			}
 			1195 = {
-				set_state_flag = EQS_controls_1
+				set_state_flag = SOUTH_controls_1
 			}
 			1193 = {
-				set_state_flag = EQS_controls_1
+				set_state_flag = SOUTH_controls_1
 			}
 			328 = {
-				set_state_flag = EQS_controls_1
+				set_state_flag = SOUTH_controls_1
 			}
 			4 = {
-				set_state_flag = EQS_controls_1
+				set_state_flag = SOUTH_controls_1
 			}
 			7 = {
-				set_state_flag = EQS_controls_1
+				set_state_flag = SOUTH_controls_1
+			}
+			1199 = {
+				set_state_flag = SOUTH_controls_2
+			}
+			1210 = {
+				set_state_flag = SOUTH_controls_2
+			}
+			687 = {
+				set_state_flag = SOUTH_controls_2
+			}
+			694 = {
+				set_state_flag = SOUTH_controls_2
+			}
+			693 = {
+				set_state_flag = SOUTH_controls_2
+			}
+			696 = {
+				set_state_flag = SOUTH_controls_2
+			}
+			697 = {
+				set_state_flag = SOUTH_controls_2
+			}
+			733 = {
+				set_state_flag = SOUTH_controls_2
 			}
 			678 = {
 				add_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_8 }	
@@ -184,19 +209,26 @@ on_actions = {
 			28 = {
 				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
 			}
-		}
-	}
-	#GRF Helping PLB Against PNG
-	on_declare_war = { 
-		effect = {
-			if = {
-				limit = {
-					tag = PLB
-					FROM = { tag = PNG }
-				}
-				PLB = {
-					country_event = EoF.5
-				}
+			683 = {
+				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
+			}
+			685 = {
+				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
+			}
+			686 = {
+				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
+			}
+			1164 = {
+				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
+			}
+			1202 = {
+				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
+			}
+			1203 = {
+				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
+			}
+			1204 = {
+				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
 			}
 		}
 	}
@@ -376,6 +408,10 @@ on_actions = {
 							owner = JAK
 						}
 						create_unit = {
+							division = "name = \"Great Clan Hussars\" division_template = \"Great Clan Hussars\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = JAK
+						}
+						create_unit = {
 							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
@@ -445,7 +481,7 @@ on_actions = {
 					tag = JAK
 					FROM = { tag = YAK }
 				}
-				add_threat = 50
+				add_threat = 30
 				YAK = {
 					remove_ideas = EoF_YAK_JAK_civil_war
 					every_controlled_state = {
@@ -480,7 +516,7 @@ on_actions = {
 					tag = YAK
 					FROM = { tag = JAK }
 				}
-				add_threat = 50
+				add_threat = 30
 				JAK = {
 					remove_ideas = EoF_YAK_JAK_civil_war
 					every_controlled_state = {
@@ -511,23 +547,6 @@ on_actions = {
 			}
 		}
 	}
-	#JER Joins When CHN Declares
-	on_declare_war = { 
-		effect = {
-			if = {
-				limit = {
-					tag = CHN
-					FROM = { tag = EQS }
-				}
-				CHN = {
-					add_to_faction = JER
-				}
-				EQS = {
-					complete_national_focus = EoF_war_begins
-				}
-			}
-		}
-	}
 	#Sunset's Counteroffensive
 	on_state_control_changed = {
 		effect = {
@@ -554,20 +573,21 @@ on_actions = {
 							state = 119
 							state = 114
 							state = 101
-							state = 2
-							state = 3
-							state = 104
-							state = 74
+							state = 68
+							state = 179
 							state = 178
-							state = 135
-							state = 134
+							state = 70
+							state = 148
+							state = 147
+							state = 144
+							state = 141
 						}
 					}
 				}
 				EQS = {
 					country_event = {
 						id = EoF_great_war.1
-						days = 7
+						days = 1
 					}
 				}
 			}
@@ -616,8 +636,9 @@ on_actions = {
 					}
 					ROOT = { 
 						OR = { 
-							is_in_faction_with = CHN 
 							tag = CHN
+							tag = GRF
+							tag = PLB
 						} 
 					}
 					FROM.FROM = {

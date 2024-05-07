@@ -3948,8 +3948,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = EoF_STG_buy_planes
-		icon = GFX_goal_stg_eqs
+		id = EoF_STG_war_eco
+		icon = GFX_goal_stg_nourishing_the_revolution
 		cost = 2
 		prerequisite = {
 			focus = EoF_join_UPA
@@ -3957,11 +3957,7 @@ focus_tree = {
 		x = 16
 		y = 1
 		completion_reward = {
-			add_equipment_subsidy = {
-				cic = 10000
-				equipment_type = small_plane_airframe
-				seller_tags = { EQS }
-			}
+			add_ideas = STG_economic_policy
 		}
 	}
 	focus = {
@@ -3969,7 +3965,7 @@ focus_tree = {
 		icon = GFX_goal_stg_socialist_industry
 		cost = 5
 		prerequisite = {
-			focus = EoF_STG_buy_planes
+			focus = EoF_STG_war_eco
 		}
 		x = 16
 		y = 2

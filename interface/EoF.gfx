@@ -51,6 +51,7 @@ spriteTypes = {
 	
 		legacy_lazy_load = no
 	}
+
 	###Tank Modules###
 	spriteType = {
 		name = "GFX_EMI_advanced_medium_tank_turret"
@@ -72,6 +73,87 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_cannon_4.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_high_velocity_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_high_velocity_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_high_velocity_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_high_velocity_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_high_velocity_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_high_velocity_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_high_velocity_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_high_velocity_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_large_medium_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_large_medium_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_large_heavy_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_large_heavy_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_close_support_gun"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_close_support_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_close_support_gun"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_close_support_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_close_support_gun"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_close_support_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_howitzer"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_howitzer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_howitzer_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_howitzer_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_howitzer_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_howitzer_3.dds"
+		legacy_lazy_load = no
+	}
+
 	spriteType = {
 		name = "GFX_EMI_tank_advanced_medium_main_armament"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_medium_main_armament.dds"
@@ -113,6 +195,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_periscope_optics_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_periscope_optics_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_periscope_optics_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_periscope_optics_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_simplification_module"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/simplification.dds"
 		legacy_lazy_load = no
@@ -129,6 +221,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_wartime_simplification_chromium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/simplification.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_wartime_simplification_general"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/simplification.dds"
 		legacy_lazy_load = no
 	}
@@ -160,6 +257,51 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_spall_liner"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_spall_liner.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_special_ammunition"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apcr.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_ventilation_system"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/vents.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_coaxial_module"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/coaxial.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_coaxial_lmg"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_coaxial_lmg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_coaxial_hmg"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_machine_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_coaxial_autocannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_coaxial_auto_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_coaxial_small_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_coaxial_close_support_gun"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_close_support_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_rocket_module"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/rocket.dds"
 		legacy_lazy_load = no
 	}
 	###Technologies###
@@ -202,6 +344,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_heavyartillery6_medium"
 		textureFile = "gfx/interface/technologies/artillery5.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyartillery7_medium"
+		textureFile = "gfx/interface/technologies/artillery4.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyartillery8_medium"
+		textureFile = "gfx/interface/technologies/artillery4.dds"
 	}
 	SpriteType = {
 		name = "GFX_fieldgun1_medium"
@@ -263,7 +413,7 @@ spriteTypes = {
 		name = "GFX_improved_assault_weapons_medium"
 		texturefile = "gfx/interface/technologies/assault_equipment_2.dds"
 	}
-	###Events###
+	###Pictures###
 	spriteType = {
 		name = "GFX_GRF_border_war"
 		texturefile = "gfx/event_pictures/GRF_border_war.dds"
@@ -271,6 +421,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_GRF_volcano"
 		texturefile = "gfx/event_pictures/GRF_volcano.dds"
+	}
+	spriteType = {
+		name = "GFX_ABY_encampment"
+		texturefile = "gfx/event_pictures/ABY_encampment.dds"
+	}
+	spriteType = {
+		name = "GFX_JER_equestrian_threat"
+		texturefile = "gfx/event_pictures/JER_equestrian_threat.dds"
+	}
+	spriteType = {
+		name = "GFX_JER_wingbardy_threat"
+		texturefile = "gfx/event_pictures/JER_wingbardy_threat.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_picture_EoF_academy"
+		texturefile = "gfx/interface/decisions/EoF_academy.dds"
 	}
 	###Units###
 	spriteType = {
@@ -431,6 +597,21 @@ spriteTypes = {
 		name = "GFX_unit_reinforced_modern_armor_icon_small"
 		texturefile = "gfx/texticons/unit_reinforced_modern_armor_icon_small.dds"
 		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_amphibious_light_armor_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_amphibious_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_amphibious_medium_armor_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_amphibious_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_amphibious_heavy_armor_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_amphibious_tank_icon.dds"
 		noOfFrames = 2
 	}
 	###Ideas###

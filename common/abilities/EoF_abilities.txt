@@ -13,10 +13,9 @@ ability = {
 		one_time_effect = {
 			add_temporary_buff_to_units = {
 				combat_offense = -0.5
-				combat_defense = -0.5
-				org_damage_multiplier = 0.6
+				combat_defense = -0.75
+				org_damage_multiplier = -0.9
 				str_damage_multiplier = -0.9
-				cannot_retreat_while_attacking = 1.0
 				days = 7
 			}
 		}

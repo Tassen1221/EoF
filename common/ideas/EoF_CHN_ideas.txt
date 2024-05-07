@@ -7,8 +7,6 @@ ideas = {
 				supply_consumption_factor = -0.2
 				no_supply_grace	= 48.0
 				planning_speed = 1.0
-				acclimatization_cold_climate_gain_factor = 5
-				winter_attrition_factor = -0.8
 			}
 			targeted_modifier = {
 				tag = EQS
@@ -78,9 +76,10 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_scw_intervention_nationalists_focus
 			modifier = {
-				max_command_power = 20
+				max_command_power = 30
 				war_support_weekly = -0.001
 				conversion_cost_civ_to_mil_factor = -0.3
+				mobilization_speed = 0.5
 			}
 		}
 		EoF_immortal_swarm = {
@@ -94,6 +93,14 @@ ideas = {
 				army_attack_factor = -0.2
 				army_defence_factor = -0.2
 			}
+		}
+		EoF_CHN_winter_fighting = {
+			removal_cost = -1
+			picture = PLB_we_are_winter
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 1.0
+				winter_attrition_factor = -0.25
+			}		
 		}
 		EoF_CHN_warplan_short_1 = {
 			removal_cost = -1

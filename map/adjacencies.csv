@@ -853,6 +853,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20202;20201;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Southeast
 20202;8626;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia West
 
+7384;448;;-1;-1;-1;-1;-1;NORTH_SEAQUESTRIAN_STRAIT;North Seaquestrian Strait
+7384;7987;;-1;-1;-1;-1;-1;NORTH_SEAQUESTRIAN_STRAIT;North Seaquestrian Strait
+
+7978;20212;;-1;-1;-1;-1;-1;SOUTH_SEAQUESTRIAN_STRAIT;South Seaquestrian Strait
+7978;20213;;-1;-1;-1;-1;-1;SOUTH_SEAQUESTRIAN_STRAIT;South Seaquestrian Strait
+
+5457;5552;;-1;-1;-1;-1;-1;DAZZHIP_STRAIT;Dazzhip Strait
+5457;8661;;-1;-1;-1;-1;-1;DAZZHIP_STRAIT;Dazzhip Strait
+
 6398;6279;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 6398;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 3345;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front

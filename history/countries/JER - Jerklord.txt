@@ -153,9 +153,10 @@ add_ideas = {
 	JER_memories 
 	JER_legacy_of_coltbert
 }
+add_timed_idea = { idea = EoF_JER_armament days = 1825 }
 
 set_stability = 0.55
-set_war_support = 0.45
+set_war_support = 0.55
 
 ### Leaders & Generals ###
 recruit_character = JER_king_moriset_discret

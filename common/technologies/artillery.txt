@@ -65,6 +65,7 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_anti_air_1
 			tank_small_cannon
+			coaxial_small_cannon
 			secondary_turret_small_cannon
 		}
 		research_cost = 1.5
@@ -112,9 +113,8 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
+			tank_small_howitzer
+			tank_medium_howitzer
 		}
 
 		path = {
@@ -172,8 +172,9 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_medium_howitzer
-			tank_medium_cannon
+			tank_light_close_support_gun
+			coaxial_close_support_gun
+			secondary_turret_close_support_gun
 		}
 
 		path = {
@@ -225,6 +226,11 @@ technologies = {
 	}
 
 	artillery2 = {
+
+		enable_equipment_modules = {
+			tank_small_howitzer_2
+			tank_medium_howitzer_2
+		}
 
 		artillery = {
 			soft_attack = 0.1
@@ -293,7 +299,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_medium_howitzer_2
+			tank_medium_close_support_gun
 		}
 		path = {
 			leads_to_tech = artillery4
@@ -330,12 +336,12 @@ technologies = {
 	}
 
 	artillery4 = {
-
 		enable_equipments = {
 			artillery_equipment_3
 		}
+
 		enable_equipment_modules = {
-			tank_medium_cannon_2
+			tank_medium_howitzer_3
 		}
 
 		path = {
@@ -493,6 +499,10 @@ technologies = {
 
 	heavyartillery3 = {
 
+		enable_equipment_modules = {
+			tank_heavy_howitzer
+		}
+
 		heavy_artillery = {
 			soft_attack = 0.1			
 		}
@@ -528,13 +538,17 @@ technologies = {
 			heavy_artillery_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_heavy_howitzer
+			tank_heavy_close_support_gun
 			tank_super_heavy_howitzer
 		}
 
 		start_year = 1012
 		path = {
 			leads_to_tech = heavyartillery5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavyartillery7
 			research_cost_coeff = 1
 		}
 		research_cost = 1
@@ -553,13 +567,15 @@ technologies = {
 	heavyartillery5 = {
 
 		heavy_artillery = {
-			soft_attack = 0.1			
+			soft_attack = 0.05
 		}
 		heavy_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.05
+			maximum_speed = -0.1
 		}
 		mech_heavy_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.05
+			maximum_speed = -0.1
 		}
 
 		start_year = 1013
@@ -569,9 +585,13 @@ technologies = {
 		}
 		research_cost = 1
 
+		XOR = {
+			heavyartillery7
+		}
+
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 10 }
+			position = { x = -5 y = 10 }
 		}
 
 		categories = {
@@ -582,14 +602,20 @@ technologies = {
 
 	heavyartillery6 = {
 
+		enable_equipment_modules = {
+			tank_heavy_howitzer_2
+		}
+
 		heavy_artillery = {
-			soft_attack = 0.1			
+			soft_attack = 0.05		
 		}
 		heavy_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.05
+			maximum_speed = -0.1
 		}
 		mech_heavy_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.05
+			maximum_speed = -0.1
 		}
 
 		start_year = 1014
@@ -597,7 +623,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 12 }
+			position = { x = -5 y = 12 }
 		}
 
 		categories = {
@@ -605,6 +631,59 @@ technologies = {
 			mio_cat_all_artillery_equipment
 		}
 	}
+
+	heavyartillery7 = {
+
+		heavy_artillery_brigade = {
+			maximum_speed = 0.15
+		}
+
+		start_year = 1013
+		path = {
+			leads_to_tech = heavyartillery8
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		XOR = {
+			heavyartillery5
+		}
+
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 10 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	heavyartillery8 = {
+
+		enable_equipment_modules = {
+			tank_heavy_howitzer_2
+		}
+
+		heavy_artillery_brigade = {
+			maximum_speed = 0.15
+		}
+
+		start_year = 1014
+		research_cost = 1
+
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 12 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
 	
 	###------> X <><> <><> <><> <><> <><>
 
@@ -814,11 +893,10 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_2
-			tank_auto_cannon
+			coaxial_autocannon
 			secondary_turret_autocannon
 			tank_anti_air_cannon
 			tank_heavy_anti_air_cannon
-			tank_heavy_cannon
 		}
 
 		enable_building = {
@@ -950,7 +1028,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_3
-			tank_auto_cannon_2
 			tank_anti_air_cannon_2
 			tank_heavy_anti_air_cannon_2
 		}
@@ -1023,9 +1100,6 @@ technologies = {
 		}
 		modern_sp_anti_air_brigade= {
 			soft_attack = 0.1
-		}
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
 		}
 
 		tech_air_damage_factor = -0.02
@@ -1155,7 +1229,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_anti_air_4
-			tank_heavy_cannon_3
 			tank_anti_air_cannon_3
 			tank_heavy_anti_air_cannon_3
 			auto_loader
@@ -1204,8 +1277,10 @@ technologies = {
 			anti_tank_equipment_1
 		}
 		enable_equipment_modules = {
-			tank_high_velocity_cannon
+			tank_medium_cannon
+			tank_medium_high_velocity_cannon
 			tank_heavy_cannon
+			tank_heavy_high_velocity_cannon
 			tank_buster_1
 		}
 		path = {
@@ -1289,7 +1364,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_medium_cannon
+			tank_small_cannon_2
 			squeezebore_adaptor
 		}
 		path = {
@@ -1357,23 +1432,20 @@ technologies = {
 	fieldgun1 = {
 
 		anti_tank = {
-			hard_attack = -0.1
 			ap_attack = -0.1
-			soft_attack = 2.5
+			soft_attack = 2
 		}
 		anti_tank_brigade = {
-			hard_attack = -0.1
 			ap_attack = -0.1
-			soft_attack = 2.5
+			soft_attack = 2
 		}
 		mot_anti_tank_brigade = {
-			hard_attack = -0.1
 			ap_attack = -0.1
-			soft_attack = 2.5
+			soft_attack = 2
 		}
 
 		enable_equipment_modules = {
-			tank_medium_cannon
+			tank_small_cannon_2
 			squeezebore_adaptor
 		}
 		path = {
@@ -1403,15 +1475,13 @@ technologies = {
 
 	antitank2 = {
 
-		mot_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
+			tank_light_high_velocity_cannon
+			tank_medium_cannon_2
+			tank_medium_high_velocity_cannon_2
 			tank_buster_2
 		}		
 		path = {
@@ -1430,6 +1500,10 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 6 y = 6 }
+		}
+
+		sub_technologies = {
+			large_medium_cannon
 		}
 
 		ai_will_do = {
@@ -1471,9 +1545,23 @@ technologies = {
 		}
 	}
 
+	large_medium_cannon = {
+		enable_equipment_modules = {
+			tank_large_medium_cannon
+		}
+		research_cost = 2.5
+		start_year = 1011
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}		
+	}
+
 	antitank3 = {
 		enable_equipment_modules = {
-			tank_medium_cannon_2
+			tank_small_cannon_3
 		}
 		anti_tank = {
 			hard_attack = 0.1
@@ -1545,7 +1633,8 @@ technologies = {
 	antitank4 = {
 
 		enable_equipment_modules = {
-			tank_high_velocity_cannon_2
+			tank_light_high_velocity_cannon_2
+			special_ammunition
 		}
 		anti_tank = {
 			hard_attack = 0.1
@@ -1615,7 +1704,7 @@ technologies = {
 		}	
 		enable_equipment_modules = {
 			tank_medium_cannon_3
-			# tank_advanced_medium_high_velocity_cannon
+			tank_medium_high_velocity_cannon_3
 			auto_loader
 		}
 		
@@ -1679,13 +1768,14 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
+			tank_heavy_high_velocity_cannon_2
 		}			
 		path = {
 			leads_to_tech = heavyantitank2
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1011
 
@@ -1694,11 +1784,29 @@ technologies = {
 			position = { x = 9 y = 6 }
 		}
 
+		sub_technologies = {
+			large_heavy_cannon
+		}
+
 		categories = {
 			artillery
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+	}
+
+	large_heavy_cannon = {
+		enable_equipment_modules = {
+			tank_large_heavy_cannon
+		}
+		research_cost = 2.5
+		start_year = 1011
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}		
 	}
 
 	heavyantitank2 = {
@@ -1739,6 +1847,9 @@ technologies = {
 
 	heavyantitank3 = {
 
+		enable_equipment_modules = {
+			special_ammunition
+		}
 		heavy_anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1			
@@ -1779,9 +1890,8 @@ technologies = {
 			heavy_anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
-			# tank_advanced_heavy_high_velocity_cannon 
+			tank_heavy_high_velocity_cannon_3
 			auto_loader
 		}		
 
@@ -1944,7 +2054,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_high_velocity_cannon_4
+			tank_medium_high_velocity_cannon_4
 			tank_heavy_cannon_4
 			tank_buster_3
 		}
@@ -2123,7 +2233,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_high_velocity_cannon_5
+			tank_medium_high_velocity_cannon_5
 			tank_heavy_cannon_5
 			tank_agtm_launcher
 			anti_tank_guided_missiles

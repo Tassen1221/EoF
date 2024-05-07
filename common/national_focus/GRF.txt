@@ -8929,9 +8929,11 @@ focus_tree = {
 		id = GRF_massive_expansion
 		icon = GFX_SIA_maritmesilkroad
 		cost = 8.00
-		prerequisite = { focus = GRF_naval_aviation_f }
-		prerequisite = { focus = GRF_battleship_f }
-		prerequisite = { focus = GRF_submarine_f }
+		prerequisite = { 
+			focus = GRF_naval_aviation_f
+			focus = GRF_battleship_f
+			focus = GRF_submarine_f
+		}
 		available = {
 			239 = { is_owned_and_controlled_by = ROOT }
 			243 = { is_owned_and_controlled_by = ROOT }
@@ -9000,7 +9002,42 @@ focus_tree = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = grf_united_shipbuilding_corporation
 			}
+			add_timed_idea = {
+				idea = EoF_naval_expansion
+				days = 365
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = EoF_GRF_naval_slot
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = { 
+			focus = GRF_massive_expansion
+		}
+		x = 42
+		y = 8
+		
+		offset = {
+			x = -20
+			y = 0
+			trigger = {
+				has_completed_focus = GRF_highhill_junta
+			}
+		}
+		
+		offset = {
+			x = -12
+			y = 0
+			trigger = {
+				has_completed_focus = GRF_free_elections
+			}
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 }

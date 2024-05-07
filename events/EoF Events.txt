@@ -282,7 +282,101 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = EoF.9
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		HIP = {
+			division_template = {
+				name = "Special Marine Corps"
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 0 y = 4 }
+	
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 1 y = 4 }
 
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 2 y = 3 }
+					marine = { x = 2 y = 4 }
+					
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+					artillery_brigade = { x = 3 y = 4 }
+
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }
+					artillery_brigade = { x = 4 y = 4 }
+				}
+				support = {
+					heavy_artillery = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					medium_flame_tank = { x = 0 y = 2 }
+					engineer = { x = 0 y = 3 }
+					recon =  {x = 0 y = 4 }
+					anti_tank = { x = 0 y = 5 }
+					anti_air = { x = 0 y = 6 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 1165 }
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"Special Marine Division\" division_template = \"Special Marine Corps\" start_experience_factor = 1"
+					owner = HIP
+				}
+			}
+		}
+	}
+}
 news_event = {
 	id = EoF.news.1
 	title = EoF.news.1.t
@@ -293,5 +387,41 @@ news_event = {
 
 	option = {
 		name = EoF.news.1.a
+	}
+}
+news_event = {
+	id = EoF.news.2
+	title = EoF.news.2.t
+	desc = EoF.news.2.d
+	picture = GFX_ABY_encampment
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = EoF.news.2.a
+	}
+}
+news_event = {
+	id = EoF.news.3
+	title = EoF.news.3.t
+	desc = EoF.news.3.d
+	picture = GFX_JER_equestrian_threat
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = EoF.news.3.a
+	}
+}
+news_event = {
+	id = EoF.news.4
+	title = EoF.news.4.t
+	desc = EoF.news.4.d
+	picture = GFX_JER_wingbardy_threat
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = EoF.news.4.a
 	}
 }

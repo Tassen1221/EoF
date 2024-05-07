@@ -1,0 +1,432 @@
+EoF_academy_category = {
+	EoF_academy_organizer = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = organizer
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = organizer
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_panzer_leader = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = panzer_leader
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = panzer_leader
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_cavalry_leader = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = cavalry_leader
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = cavalry_leader
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_trait_engineer = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = trait_engineer
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = trait_engineer
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_infantry_leader = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = infantry_leader
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = infantry_leader
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_naval_invader = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = naval_invader
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = naval_invader
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_commando= {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = commando
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = commando
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_trickster = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = trickster
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = trickster
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_skilled_staffer = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = skilled_staffer
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = skilled_staffer
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+	EoF_academy_artillery_specialist = {
+		icon = GFX_decision_generic_army_support
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+			any_unit_leader = {
+				has_trait = artillery_specialist
+			}
+			any_unit_leader = {
+				has_trait = EoF_academy_trait
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 9
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_army_xp_10_pp_30
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = EoF_academy_in_progress
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			clr_country_flag = EoF_academy_in_progress
+			random_unit_leader = {
+				limit = {
+					has_trait = EoF_academy_trait
+				}
+				add_trait = {
+					character = THIS
+					trait = artillery_specialist
+				}
+				remove_trait = {
+					character = THIS
+					trait = EoF_academy_trait
+				}
+			}
+		}
+	}
+}

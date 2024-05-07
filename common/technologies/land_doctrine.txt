@@ -3511,9 +3511,9 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 2
 		}
-		army_speed_factor = 0.10
+		army_speed_factor = 0.05
 		
 		path = {
 			leads_to_tech = fluid_battlespace 
@@ -3522,8 +3522,6 @@ technologies = {
 		
 		dependencies = { 
 			finished_land_doctrine = 1
-			advanced_infantry_weapons_b = 1
-			mechanised_infantry_a = 1
 		} 
 		
 		doctrine = yes	
@@ -3572,7 +3570,7 @@ technologies = {
 				OR = {
 					AND = {
 						is_faction_leader = no
-						var:faction_leader = {
+						faction_leader = {
 							OR = {
 								has_tech = berlin_path
 								is_researching_technology = berlin_path
@@ -3608,10 +3606,10 @@ technologies = {
 		}
 		
 		category_all_armor = {
-			breakthrough = 0.2
+			breakthrough = 0.05
 		}
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 1
 		}	
 		
 		doctrine = yes	
@@ -3646,8 +3644,8 @@ technologies = {
 		}
 		
 		category_tanks = {
-			max_organisation = 3
-			breakthrough = 0.2
+			max_organisation = 1
+			breakthrough = 0.05
 		}
 		
 		doctrine = yes	
@@ -3685,10 +3683,10 @@ technologies = {
 		}
 
 		category_tanks = {
-			max_organisation = 3
+			max_organisation = 1
 		}
 		category_all_armor = {
-			armor_value = 0.2
+			armor_value = 0.05
 		}
 		
 		doctrine = yes	
@@ -3724,8 +3722,8 @@ technologies = {
 		}
 			
 		category_all_infantry = {
-			max_organisation = 10
-			default_morale = 0.1
+			max_organisation = 2
+			default_morale = 0.05
 		}
 		
 					
@@ -3763,7 +3761,7 @@ technologies = {
 		}
 			
 		category_motmech = {
-			max_organisation = 15
+			max_organisation = 3
 		}
 		
 					
@@ -3798,12 +3796,12 @@ technologies = {
 		}
 			
 		category_motmech = {
-			maximum_speed = 0.1
-			default_morale = 0.1
+			maximum_speed = 0.05
+			default_morale = 0.05
 		}
 		category_all_armor = {
-			maximum_speed = 0.1
-			default_morale = 0.1
+			maximum_speed = 0.05
+			default_morale = 0.05
 		}
 		
 					
@@ -3838,9 +3836,9 @@ technologies = {
 		}
 
 		category_army = {
-			max_organisation = 5
+			max_organisation = 1
 		}
-		org_loss_when_moving = -0.15
+		org_loss_when_moving = -0.1
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -3868,18 +3866,11 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 2
 		}
 		category_all_armor = {
 			max_organisation = 1
 		}
-		logistics_company = {
-			battalion_mult = {
-				category = category_all_infantry
-				defense = 0.05
-			}
-		}
-		
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -3907,19 +3898,14 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
-		category_support_battalions = {
-			soft_attack = 0.25
-			hard_attack = 0.25
-			max_organisation = 10
+		category_army = {
+			soft_attack = 0.025
 		}
-		shore_bombardment_bonus = 0.2
 		
 		xor = { global_path berlin_path warsaw_path }
 		
 		dependencies = {
 			finished_land_doctrine = 1
-			advanced_infantry_weapons_b = 1
-			mechanised_infantry_a = 1
 		}
 		
 		path = {
@@ -3972,7 +3958,7 @@ technologies = {
 				OR = {
 					AND = {
 						is_faction_leader = no
-						var:faction_leader = {
+						faction_leader = {
 							OR = {
 								has_tech = brussels_path
 								is_researching_technology = brussels_path
@@ -4000,7 +3986,7 @@ technologies = {
 		
 		
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 2
 		}
 		
 		
@@ -4040,8 +4026,8 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_army = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.025
+			ap_attack = 0.05
 		}		
 
 		path = {
@@ -4078,13 +4064,10 @@ technologies = {
 		xp_unlock_cost = 100
 
 		category_all_armor = {
-			soft_attack = 0.1
-			hard_attack = 0.1
-			air_attack = 0.1
-			ap_attack = 0.1
-		}
-		category_tanks = {
-			max_organisation = 3
+			soft_attack = 0.025
+			hard_attack = 0.025
+			air_attack = 0.05
+			ap_attack = 0.05
 		}
 				
 		path = {
@@ -4119,11 +4102,11 @@ technologies = {
 		
 		
 		category_all_infantry = {
-			soft_attack = 0.1
-			max_organisation = 5
+			soft_attack = 0.05
+			max_organisation = 2
 		}
 		category_all_artillery = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
 
 		path = {
@@ -4160,13 +4143,13 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_artillery = {
-			default_morale = 0.15
+			default_morale = 0.1
 		}
 		category_all_aa = {
-			default_morale = 0.15
+			default_morale = 0.1
 		}
 		category_all_at = {
-			default_morale = 0.15
+			default_morale = 0.1
 		}
 
 		path = {
@@ -4203,9 +4186,10 @@ technologies = {
 			leads_to_tech = deep_recon 
 			research_cost_coeff = 1
 		}
-		category_army = {
-			soft_attack = 0.1
-			hard_attack = 0.1
+		
+		category_support_battalions = {
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 				
 		doctrine = yes	
@@ -4238,16 +4222,11 @@ technologies = {
 		}		
 
 		category_army = {
-			air_attack = 0.1
+			air_attack = 0.05
 		}
-		army_bonus_air_superiority_factor = 0.1
-		shore_bombardment_bonus = 0.1
-		signal_company = {
-			battalion_mult = {
-				category = category_all_at
-				hard_attack = 0.05
-			}
-		}
+		army_bonus_air_superiority_factor = 0.05
+		air_cas_present_factor = 0.05
+
 				
 		doctrine = yes	
 		research_cost = 4.5
@@ -4275,9 +4254,9 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_support_battalions = {
-			soft_attack = 0.25
-			hard_attack = 0.25
-			max_organisation = 10
+			soft_attack = 0.05
+			hard_attack = 0.05
+			max_organisation = 5
 		}
 			
 		doctrine = yes	
@@ -4305,13 +4284,11 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 				
-		max_planning = 0.10
+		max_planning = 0.05
 		naval_invasion_planning_bonus_speed = 0.2
 		
 		dependencies = {
 			finished_land_doctrine = 1
-			advanced_infantry_weapons_b = 1
-			mechanised_infantry_a = 1
 		}
 		
 		xor = { brussels_path warsaw_path berlin_path }
@@ -4371,7 +4348,7 @@ technologies = {
 				OR = {
 					AND = {
 						is_faction_leader = no
-						var:faction_leader = {
+						faction_leader = {
 							OR = {
 								has_tech = global_path
 								is_researching_technology = global_path
@@ -4399,7 +4376,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_light_infantry = {
-			max_organisation = 5
+			max_organisation = 2
 			defense = 0.1
 		}
 		
@@ -4437,7 +4414,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_light_infantry = {
-			max_organisation = 5
+			max_organisation = 2
 			default_morale = 0.1
 		}
 		path = {
@@ -4471,7 +4448,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_motmech = {
-			max_organisation = 5
+			max_organisation = 1
 			breakthrough = 0.1
 		}
 		
@@ -4507,12 +4484,11 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			max_organisation = 5
+			max_organisation = 2
 		}
 		category_tanks = {
 			max_organisation = 1
 		}
-		
 		path = {
 			leads_to_tech = emerging_power 
 			research_cost_coeff = 1
@@ -4575,7 +4551,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 					
-		max_dig_in = 10
+		max_dig_in = 3
 		path = {
 			leads_to_tech = rapid_response 
 			research_cost_coeff = 1
@@ -4610,7 +4586,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
-		planning_speed = 1
+		planning_speed = 0.5
 		land_reinforce_rate = 0.05
 		
 		xor = { assymetric_warfare } 
@@ -4618,12 +4594,6 @@ technologies = {
 		path = {
 			leads_to_tech = defensive_professional_army 
 			research_cost_coeff = 1
-		}
-		maintenance_company = {
-			battalion_mult = {
-				category = category_all_infantry
-				breakthrough = 0.05
-			}
 		}
 		
 		doctrine = yes	
@@ -4657,7 +4627,7 @@ technologies = {
 		enable_tactic = tactic_tactical_withdrawal
 		
 		category_army = {
-			breakthrough = 0.1
+			breakthrough = 0.05
 		}
 		
 		doctrine = yes	
@@ -4694,12 +4664,6 @@ technologies = {
 		path = {
 			leads_to_tech = concealment_tactics 
 			research_cost_coeff = 1
-		}
-		maintenance_company = {
-			battalion_mult = {
-				category = category_all_infantry
-				defense = 0.05
-			}
 		}
 		
 		doctrine = yes	
@@ -4775,8 +4739,6 @@ technologies = {
 
 		dependencies = {
 			finished_land_doctrine = 1
-			advanced_infantry_weapons_b = 1
-			mechanised_infantry_a = 1
 		}
 		
 		doctrine = yes	
@@ -4817,7 +4779,7 @@ technologies = {
 				OR = {
 					AND = {
 						is_faction_leader = no
-						var:faction_leader = {
+						faction_leader = {
 							OR = {
 								has_tech = warsaw_path
 								is_researching_technology = warsaw_path
@@ -4850,8 +4812,8 @@ technologies = {
 		}
 		
 		category_motmech = {
-			max_organisation = 5
-			default_morale = 0.1
+			max_organisation = 1
+			default_morale = 0.05
 		}
 			
 			
@@ -4891,10 +4853,10 @@ technologies = {
 		
 		org_loss_when_moving = -0.1
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 1
 		}
 		category_all_armor = {
-			default_morale = 0.1
+			default_morale = 0.05
 		}
 		
 		path = {
@@ -4930,7 +4892,7 @@ technologies = {
 		resistance_growth_on_our_occupied_states = 0.25
 		compliance_growth_on_our_occupied_states = -0.25
 		category_light_infantry = {
-			max_organisation = 5
+			max_organisation = 2
 		}
 		
 		path = {
@@ -4965,7 +4927,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
-		no_supply_grace = 72
+		no_supply_grace = 48
 		supply_combat_penalties_on_core_factor = -0.1		
 		path = {
 			leads_to_tech = red_orchestra 
@@ -4997,17 +4959,21 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		motorized = {
-			combat_width = -0.4
+			combat_width = -0.2
 		}
 		mechanized = {
-			combat_width = -0.4
+			combat_width = -0.2
 		}
 		magical_motorized = {
-			combat_width = -0.4
+			combat_width = -0.2
 		}
 		magical_mechanized = {
-			combat_width = -0.4
+			combat_width = -0.2
 		}
+		amphibious_mechanized = {
+			combat_width = -0.2
+		}
+		
 		land_reinforce_rate = 0.05
 		
 		path = {
@@ -5039,7 +5005,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.05
 		category_all_infantry = {
 			default_morale = 0.1
 		}
@@ -5079,14 +5045,11 @@ technologies = {
 		}
 			
 		category_army = {
-			default_morale = 0.2
+			default_morale = 0.1
 		}
-		field_hospital = {
-			battalion_mult = {
-				category = category_all_armor
-				max_organisation = 1
-				add = yes
-			}
+		category_all_armor = {
+			breakthrough = 0.05
+			default_morale = 0.1
 		}
 		
 		doctrine = yes	
@@ -5118,9 +5081,9 @@ technologies = {
 		
 
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 2
 		}
-		land_reinforce_rate = 0.15
+		land_reinforce_rate = 0.05
 
 		categories = {
 			land_doctrine

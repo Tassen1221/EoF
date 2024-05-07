@@ -1,7 +1,7 @@
 sub_units = {
 	heavy_artillery_brigade = {
 		abbreviation = "HART"
-		sprite = artillery
+		sprite = heavy_artillery
 		map_icon_category = infantry
 		priority = 1198
 		ai_priority = 100
@@ -68,12 +68,12 @@ sub_units = {
 		}
 
 		amphibious = {
-			attack = -0.4
+			attack = -0.8
 		}
 	}
 	mech_heavy_artillery_brigade = {
 		abbreviation = "MHART"
-		sprite = artillery
+		sprite = heavy_artillery
 		map_icon_category = infantry
 		priority = 1198
 		ai_priority = 100
@@ -147,7 +147,7 @@ sub_units = {
 		}
 
 		amphibious = {
-			attack = -0.4
+			attack = -0.8
 		}
 	}
 }

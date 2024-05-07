@@ -1,5 +1,12 @@
 ﻿l_english:
 STATE_1209:0 "Griffbraltar"
+STATE_1210:0 "Dazzhip Island"
+DAZZHIP_STRAIT:0 "Dazzhip Strait"
+NORTH_SEAQUESTRIAN_STRAIT:0 "North Seaquestrian Strait"
+SOUTH_SEAQUESTRIAN_STRAIT:0 "South Seaquestrian Strait"
+
+VICTORY_POINTS_10222:0 "El Alamane"
+
 ABILITY_ARTILLERY_BOMBARDMENT:0 "Artillery Bombardment"
 ABILITY_ARTILLERY_BOMBARDMENT_DESC:0 "Your units will bombard the enemy, but leave themselves vulnerable to counterattack."
 
@@ -7,6 +14,8 @@ modifier_production_cost_industrial_complex_factor:0 "£construction_speed_civfa
 modifier_production_cost_industrial_complex_factor_desc:0 "Modifies the cost of Military Factory construction."
 modifier_production_cost_arms_factory_factor:0 "£construction_speed_milfactory_texticon  §YMilitary Factory§! construction cost"
 modifier_production_cost_arms_factory_factor_desc:0 "Modifies the cost of Civilian Factory construction."
+
+STG_economic_policy:0 "War Communism"
 
 EoF_category:0 "Game Decisions"
 EoF_big_division_decision:0 "Add a 48w Template"
@@ -19,10 +28,39 @@ EoF_Fluttershy:0 "Element of Kindness"
 EoF_neutral_country:0 "Neutral Country"
 EoF_neutral_trade:0 "Neutral Trade"
 
+EoF_naval_expansion:0 "Dockyard Expansion"
+
 light_of_kemerkai:0 "Light of Kemerkai"
 shadow_of_kemerkai:0 "Shadow of Kemerkai"
 
-EoF_ABY_cat_therine_earnshaw:0 "Cat Earnshaw"
+EoF_ABY_cat_therine_earnshaw:0 "█████ ████████"
+
+decision_cost_army_xp_10_pp_30:0 "£army_experience  §Y10§! £pol_power  §Y30§!"
+decision_cost_army_xp_10_pp_30_blocked:0 "£army_experience  §R10§! £pol_power  §R30§!"
+decision_cost_army_xp_10_pp_30_tooltip:0 "It costs £army_experience  §Y10§! £pol_power  §Y30§! to take the decision"
+
+decision_cost_army_xp_30_pp_100:0 "£army_experience  §Y30§! £pol_power  §Y100§!"
+decision_cost_army_xp_30_pp_100_blocked:0 "£army_experience  §R30§! £pol_power  §R100§!"
+decision_cost_army_xp_30_pp_100_tooltip:0 "It costs £army_experience  §Y30§! £pol_power  §Y100§! to take the decision"
+
+EoF_academy_category:0 "Doki Doki General Academy"
+EoF_academy_category_desc:0 "Welcome to the General Academy! It's always been a dream of mine to make something special out of the things I love. Now that you're an academy member, you can help me make that dream come true. I'm super excited for you to make friends with everyone and help the General Academy become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?"
+
+EoF_academy_in_progress:0 "Academy in Progress"
+
+EoF_academy_organizer:0 "Organization Training"
+EoF_academy_panzer_leader:0 "Armour Command Training"
+EoF_academy_cavalry_leader:0 "Motorized Command Training"
+EoF_academy_trait_engineer:0 "Engineering Training"
+EoF_academy_infantry_leader:0 "Infantry Command Training"
+EoF_academy_naval_invader:0 "Naval Invasion Training"
+EoF_academy_commando:0 "Commando Training"
+EoF_academy_trickster:0 "Tactical Training"
+EoF_academy_skilled_staffer:0 "Staff Management Training"
+EoF_academy_artillery_specialist:0 "Artillery Command Training"
+
+EoF_academy_trait:0 "Academy Training"
+EoF_academy_trait_desc:0 "Selected for additional training at the General Academy."
 
 EoF_GRF_border_war_mission:0 "Demand the Village Up North"
 EoF_GRF_border_war_mission_desc:0 "The Village Up North has long been a reminder of Equestria's blatent disregard for our nation. By demanding its annexation we will finally send a message that we are not to be taken lightly."
@@ -46,6 +84,19 @@ EoF.news.1.t:0 "Snowy Mountain Eruption"
 EoF.news.1.d:0 "[This.GetNewspaperHeader] A giant fucking volcano erupted on the Nova-Stalliongrad Border. Even though this has basically no political implications whatsoever, everyone around the world is tense for some reason. Observers do comment; however, that this is incredibly convenient if a war were to break out between the countries of Northern Equus and Southern Equus to prevent either of the bordering countries from being rolled over instantly."
 EoF.news.1.a:0 "So that's why it's impassable."
 EoF_GRF_volcano_tension:0 "Snowy Mountain Eruption"
+
+EoF.news.2.t:0 "Rising Tensions in North Zebrica"
+EoF.news.2.d:0 "[This.GetNewspaperHeader] Recent Abyssinian war camps have been spotted close to the border around El Alamane. Although no aggressive actions have been taken yet, the movement of additional troops and stockpiling of supplies in the region lends credence to theories of a possible attack in the future. Equally importantly, it is as of yet unknown whether the Abyssianian government is undertaking this operation alone, or is doing so under the orders of the Changelings. Though with their head of government currently missing, it seems likely that the Abyssinian military is recieving orders from elsewhere."
+EoF.news.2.a:0 "Who was in charge again?"
+EoF_ABY_war_tension:0 "Abyssinian Buildup"
+
+EoF.news.3.t:0 "Aquileia Threatens Equestria"
+EoF.news.3.d:0 "[This.GetNewspaperHeader] Aquileian delegates have recently returned from a diplomatic mission to Equestria. Reportedly, the delegates demanded that Equestrian territory in Fezera, New Mareland and Skyfall be handed over to Aquileian control as they presented 'legitimate security concerns'. In response, Equestrian officials have made it clear that despite any grievances the Aquileian government may have, these territories will forevermore remain under the protection of Equestria and her allies."
+EoF.news.3.a:0 "War is Looming."
+
+EoF.news.4.t:0 "Aquileia Threatens Wingbardy"
+EoF.news.4.d:0 "[This.GetNewspaperHeader] Following a stunning series of victories against Equestria, Aquileia has officially called into question the validity of the Treaty of Tarrin. Meanwhile in Karthin, Wingbardian officials responded decisively with a unilaterial denouncement of Aquileian aggression, as well as passing several unprecedented laws that would see the first fulltime remilitarization of Wingbardy since its unification years ago."
+EoF.news.4.a:0 "Wingbardy will be tested."
 
 EoF_YAK_JAK_civil_war:0 "Yak-Jak Civil War"
 EoF_YAK_JAK_civil_war_volunteers_1:0 "Yak-Jak Civil War Volunteers"
@@ -318,11 +369,16 @@ EoF_CHN_warplan_long_flag:0 "Long-Term Production Favoured"
 EoF_CHN_warplan_long_1:0 "Retooling Economy"
 EoF_CHN_warplan_long_2:0 "Resilient War Industry"
 
-
 EoF_war_measures:0 "War Measures"
 EoF_immortal_swarm:0 "The Immortal Swarm"
 
+EoF_CHN_winter_fighting:0 "Winter Fighting Experience"
+EoF_winter_offensive_selected:0 "Winter Offensive Selected"
+EoF_summer_offensive_selected:0 "Summer Offensive Selected"
+
 EoF_fluttershy_desc:0 "Fluttershy is the Element of Kindness and a caretaker of animals. She is known for her shyness, but also her beauty and hidden assertiveness that is revealed whenever her friends are threatened. Now she is interested in heading a research department for developing healing spells."
+
+EoF_great_war_began:0 "Great War Has Began"
 
 EoF_luna_reform_flag:0 "Luna Leads the Reform"
 EoF_luna_reform_1:0 "Luna's Reform"
@@ -353,6 +409,13 @@ EoF_HIP_directive_navy_tt:0 "Spawns in a powerful fleet comprised of three §YGu
 EoF_HIP_directive_air_tt:0 "Researching better modules and airframes will improve the quality of the §YP-32 Corvus§! fighter and §YA-60 Thundercloud§! CAS."
 EoF_HIP_directive_army_tt:0 "Spawns in four 28 width §YHeavy Artillery Divisions§! as well as preparing eighteen 14 width §YHome Guard Divisions§! in case of an invasion."
 
+EoF_HIP_armed_citizens:0 "Citizen Militias"
+EoF_HIP_situation_stable_army:0 "Defensive Posture"
+EoF_HIP_situation_good_army:0 "Offensive Posture"
+EoF_HIP_naval_focused:0 "Naval Arms Race"
+EoF_HIP_primo_victoria_initial:0 "Might of Hippogriffia"
+EoF_HIP_primo_victoria_final:0 "Primo Victoria"
+
 EoF_JER_DOMINATION_neutrality:0 "Greater Aquileian Republic"
 EoF_JER_DOMINATION_neutrality_ADJ:0 "Aquileian"
 EoF_JER_DOMINATION_neutrality_DEF:0 "The Greater Aquileian Republic"
@@ -369,13 +432,40 @@ EoF_JER_DOMINATION_democratic:0 "Greater Aquileian Republic"
 EoF_JER_DOMINATION_democratic_ADJ:0 "Aquileian"
 EoF_JER_DOMINATION_democratic_DEF:0 "The Greater Aquileian Republic"
 
+EoF_HIP_DOMINATION_neutrality:0 "Greater Hippogriffia"
+EoF_HIP_DOMINATION_neutrality_ADJ:0 "Hippogriffian"
+EoF_HIP_DOMINATION_neutrality_DEF:0 "Greater Hippogriffia"
+
+EoF_HIP_DOMINATION_fascism:0 "Greater Hippogriffia"
+EoF_HIP_DOMINATION_fascism_ADJ:0 "Hippogriffian"
+EoF_HIP_DOMINATION_fascism_DEF:0 "Greater Hippogriffia"
+
+EoF_HIP_DOMINATION_communism:0 "Greater Hippogriffia"
+EoF_HIP_DOMINATION_communism_ADJ:0 "Hippogriffian"
+EoF_HIP_DOMINATION_communism_DEF:0 "Greater Hippogriffia"
+
+EoF_HIP_DOMINATION_democratic:0 "Greater Hippogriffia"
+EoF_HIP_DOMINATION_democratic_ADJ:0 "Hippogriffian"
+EoF_HIP_DOMINATION_democratic_DEF:0 "Greater Hippogriffia"
+
+EoF_JER_armament:0 "Aquileian Five Year Plan"
+
 EoF_griffonian_contender:0 "Griffonian Contender"
 EoF_griffonian_dominator:0 "Griffonian Dominator"
 
 EoF_invasion_preparation:0 "Preparing Equestrian Invasion"
 
 EoF_JER_form_domination:0 "Declare the Greater Aquileian Republic"
+EoF_HIP_form_domination:0 "Declare Greater Hippogriffia"
+
 EoF_JER_invade_equestria_mission:0 "Invasion of Equestria"
+EoF_JER_invade_wingbardy_mission:0 "Invasion of Wingbardy"
+
+EoF_tarrin_war_threat:0 "Tarrin War Threatened"
+
+EoF_WNG_treaty:0 "Treaty of Tarrin"
+EoF_WNG_militarization:0 "Fury of Karthin"
+EoF_WNG_militarization_desc:0 "The treacherous Aquileians have mistaken our unwillingness to fully commit to this war as a sign of weakness. Let them face the fury of Karthin, reserved for those who have forsaken all honour."
 
 EoF_southern_equus_invasion_terrain:0 "Unsuitable Landing Terrain"
 EoF_northern_equus_invasion_terrain_0:0 "Eastern Invasion Wall"
@@ -387,6 +477,16 @@ EoF_northern_equus_invasion_terrain_5:0 "Eastern Invasion Wall"
 EoF_northern_equus_invasion_terrain_6:0 "Eastern Invasion Wall"
 EoF_northern_equus_invasion_terrain_7:0 "Eastern Invasion Wall"
 EoF_northern_equus_invasion_terrain_8:0 "Eastern Invasion Wall"
+
+EoF_HIP_invasion_terrain_0:0 "§RCatastrophic§! Invasion Wall"
+EoF_HIP_invasion_terrain_1:0 "§RVery Dangerous§! Invasion Wall"
+EoF_HIP_invasion_terrain_2:0 "§RDangerous§! Invasion Wall"
+EoF_HIP_invasion_terrain_3:0 "§OHeavily Threatened§! Invasion Wall"
+EoF_HIP_invasion_terrain_4:0 "§OThreatened§! Invasion Wall"
+EoF_HIP_invasion_terrain_5:0 "§OSlightly Threatened§! Invasion Wall"
+EoF_HIP_invasion_terrain_6:0 "§GAcceptable§! Invasion Wall"
+EoF_HIP_invasion_terrain_7:0 "§GNormal§! Invasion Wall"
+EoF_HIP_invasion_terrain_8:0 "§GStrong§! Invasion Wall"
 
 EoF_EQS_southern_island_campaign_0:0 "Celestial Sea Islands: §RCatastrophic§!"
 EoF_EQS_southern_island_campaign_1:0 "Celestial Sea Islands: §tVery Dangerous§!"

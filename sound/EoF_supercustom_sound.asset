@@ -18,3 +18,13 @@ sound = {
 	file = "customsound/Venerable_ancient_battlefield.wav" ## location of the sound file
 	always_load = no
 }
+sound = {
+	name = "zebrica_bigevent_sound" #name you're using for the sound
+	file = "customsound/Going_forth_carrying_a_weapon.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "tarrin_bigevent_sound" #name you're using for the sound
+	file = "customsound/Four_seasons_summer.wav" ## location of the sound file
+	always_load = no
+}

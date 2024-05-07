@@ -7,10 +7,10 @@ state={
 	}
 
 	history={
-		owner = HLR
-		add_claim_by = HLR
-		add_claim_by = HLR
-		add_core_of = HLR
+		owner = HIP
+		add_claim_by = HIP
+		add_claim_by = HIP
+		add_core_of = HIP
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -23,9 +23,9 @@ state={
 		victory_points = {
 			7512 5
 		}
-		victory_points = {
-			4804 3
-		}
+		# victory_points = {
+		# 	4804 3
+		# }
 	}
 
 	provinces={

@@ -8,21 +8,25 @@ on_actions = {
 						OR = { 
 							is_in_faction_with = EQS  
 							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
 						} 
 					}
 					ROOT = { 
 						OR = { 
+							is_in_faction_with = CHN
+							tag = CHN				
 							is_in_faction_with = JER 
 							tag = JER
 						} 
 					}
 					FROM.FROM = {
-						has_state_flag = EQS_controls
+						has_state_flag = SOUTH_controls_0
 					}
 				}
 				FROM.FROM = {  
-				 	set_state_flag = JER_controls
-				 	clr_state_flag = EQS_controls
+				 	set_state_flag = NORTH_controls_0
+				 	clr_state_flag = SOUTH_controls_0
 				}
 				decrease_northern_equus_invasion_terrain = yes
 			}
@@ -34,23 +38,27 @@ on_actions = {
 				limit = {
 					FROM = { 
 						OR = { 
-							is_in_faction_with = JER
+							is_in_faction_with = CHN
+							tag = CHN				
+							is_in_faction_with = JER 
 							tag = JER
 						}
 					}
 					ROOT = { 
 						OR = { 
-							is_in_faction_with = EQS
+							is_in_faction_with = EQS  
 							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
 						}	 
 					}
 					FROM.FROM = {
-						has_state_flag = JER_controls
+						has_state_flag = NORTH_controls_0
 					}
 				}
 				FROM.FROM = { 
-				 	set_state_flag = EQS_controls 
-				 	clr_state_flag = JER_controls 
+				 	set_state_flag = SOUTH_controls_0
+				 	clr_state_flag = NORTH_controls_0
 				}
 				increase_northern_equus_invasion_terrain = yes
 			}
@@ -65,21 +73,25 @@ on_actions = {
 						OR = { 
 							is_in_faction_with = EQS  
 							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
 						} 
 					}
 					ROOT = { 
 						OR = { 
+							is_in_faction_with = CHN
+							tag = CHN				
 							is_in_faction_with = JER 
 							tag = JER
 						} 
 					}
 					FROM.FROM = {
-						has_state_flag = EQS_controls_1
+						has_state_flag = SOUTH_controls_1
 					}
 				}
 				FROM.FROM = {  
-				 	set_state_flag = JER_controls_1
-				 	clr_state_flag = EQS_controls_1
+				 	set_state_flag = NORTH_controls_1
+				 	clr_state_flag = SOUTH_controls_1
 				}
 			 	EQS = { 
 					decrease_southern_equus_invasion_idea = yes
@@ -93,27 +105,96 @@ on_actions = {
 				limit = {
 					FROM = {
 						OR = { 
-							is_in_faction_with = JER
+							is_in_faction_with = CHN
+							tag = CHN				
+							is_in_faction_with = JER 
 							tag = JER
 						}
 					}
 					ROOT = { 
 						OR = { 
-							is_in_faction_with = EQS
-							tag = EQS 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
 						}	 
 					}
 					FROM.FROM = {
-						has_state_flag = JER_controls_1
+						has_state_flag = NORTH_controls_1
 					}
 				}
 				FROM.FROM = { 
-				 	set_state_flag = EQS_controls_1
-				 	clr_state_flag = JER_controls_1
+				 	set_state_flag = SOUTH_controls_1
+				 	clr_state_flag = NORTH_controls_1
 				}
 		 		EQS = {
 					increase_southern_equus_invasion_idea = yes
 				}
+			}
+		}
+	}
+	#Hippogriffia Island Hopping
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = CHN
+							tag = CHN				
+							is_in_faction_with = JER 
+							tag = JER
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = SOUTH_controls_2
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = NORTH_controls_2
+				 	clr_state_flag = SOUTH_controls_2
+				}
+				decrease_HIP_invasion_terrain = yes
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = CHN
+							tag = CHN				
+							is_in_faction_with = JER 
+							tag = JER
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
+						}	 
+					}
+					FROM.FROM = {
+						has_state_flag = NORTH_controls_2
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = SOUTH_controls_2 
+				 	clr_state_flag = NORTH_controls_2
+				}
+				increase_HIP_invasion_terrain = yes
 			}
 		}
 	}

@@ -31,8 +31,7 @@ leader_traits = {
 	}
 	EoF_Fluttershy = {
 		random = no
-		stability_factor = 0.10
-		political_power_factor = 0.1
-		research_speed_factor = 0.05
+		stability_factor = 0.05
+		political_power_factor = 0.15
 	}
 }

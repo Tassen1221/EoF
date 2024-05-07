@@ -32,10 +32,10 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 26
-		breakthrough = 12
-		hardness = 0.6
-		armor_value = 10
+		defense = 13
+		breakthrough = 6
+		hardness = 0.3
+		armor_value = 20
 
 		#Offensive Abilities
 		ap_attack = 11
@@ -78,10 +78,9 @@ equipments = {
 		maximum_speed = 7
 
 		#Defensive Abilities
-		defense = 30
-		breakthrough = 16
-		hardness = 0.65
-		armor_value = 15
+		defense = 15
+		breakthrough = 8
+		hardness = 0.3
 
 		#Offensive Abilities
 		ap_attack = 16
@@ -112,10 +111,10 @@ equipments = {
 		maximum_speed = 8
 
 		#Defensive Abilities
-		defense = 34
-		breakthrough = 20
-		hardness = 0.7
-		armor_value = 20
+		defense = 17
+		breakthrough = 10
+		hardness = 0.3
+		armor_value = 40
 
 		#Offensive Abilities
 		ap_attack = 21

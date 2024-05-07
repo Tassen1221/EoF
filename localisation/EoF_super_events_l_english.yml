@@ -14,3 +14,11 @@ SUNSET_A:0 "Two Worlds at War"
 MOUNTAIN_T:0 "MOUNTAIN AWAKENS"
 MOUNTAIN_D:0 "Whoever rules the sky, rules the world.\n-Jonathan Rubber"
 MOUNTAIN_A:0 "A New Dawn"
+
+ZEBRICA_T:0 "THE NORTH ZEBRICA WAR"
+ZEBRICA_D:0 "I will return from this war a hero, someone who has\nmade a name for themselves. This I promise you.\n-Heathclaw"
+ZEBRICA_A:0 "Blood Stained Sand"
+
+TARRIN_T:0 "THE TARRIN WAR"
+TARRIN_D:0 "The Aquileians may be my most powerful tool,\nbut their arrogance makes them unreliable.\n-Alexander Kemerkai"
+TARRIN_A:0 "The Eagle Soars"

@@ -11,9 +11,9 @@ state = {
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = HLR
-		add_core_of = HLR
-		add_claim_by = HLR
+		owner = FAT
+		add_core_of = FAT
+		add_claim_by = FAT
 
 		buildings = {
 			infrastructure = 1

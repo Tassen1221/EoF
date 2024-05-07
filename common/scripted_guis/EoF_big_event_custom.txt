@@ -98,4 +98,54 @@ scripted_gui = {
 			}
 		}
 	}
+
+	#zebrica
+	EoF_big_event_zebrica_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "EoF_big_event_zebrica_custom_window"
+
+		visible = {
+			has_country_flag = EoF_big_event_custom_zebrica ### this global flag triggers the #superevent
+		}
+	}
+
+	EoF_big_event_frame_zebrica_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "EoF_big_event_frame_zebrica_custom"
+
+		visible = {
+			has_country_flag = EoF_big_event_custom_zebrica
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = EoF_big_event_custom_zebrica ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+
+	#tarrin
+	EoF_big_event_tarrin_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "EoF_big_event_tarrin_custom_window"
+
+		visible = {
+			has_country_flag = EoF_big_event_custom_tarrin ### this global flag triggers the #superevent
+		}
+	}
+
+	EoF_big_event_frame_tarrin_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "EoF_big_event_frame_tarrin_custom"
+
+		visible = {
+			has_country_flag = EoF_big_event_custom_tarrin
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = EoF_big_event_custom_tarrin ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
 }

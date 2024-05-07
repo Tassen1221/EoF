@@ -135,12 +135,17 @@ ideas = {
 					# 	}
 					# 	news_event = hippogriff_news.7
 					# }
+					set_global_flag = HIP_mountain_awakes_global_flag
+				}
+				if = {
+					limit = {
+						original_tag = HIP
+					}
 					hidden_effect = {
 						every_country = {
 							set_country_flag = EoF_big_event_custom_mountain
 						}
 					}
-				set_global_flag = HIP_mountain_awakes_global_flag
 				}
 			}
 			
@@ -684,6 +689,12 @@ ideas = {
 				}
 				if = {
 					limit = {
+						tag = EQS
+					}
+					has_global_flag = EoF_great_war_began
+				}
+				if = {
+					limit = {
 						original_tag = HIP
 					}
 					NOT = {
@@ -709,6 +720,12 @@ ideas = {
 					NOT = {
 						has_country_flag = ZES_pasarinha_economy_block
 					}
+				}
+				if = {
+					limit = {
+						tag = WNG
+					}
+					has_global_flag = EoF_tarrin_war_threat
 				}
 			}
 
@@ -765,13 +782,17 @@ ideas = {
 						}
 						surrender_progress > 0.5
 					}
-
+					if = {
+						limit = {
+							tag = EQS
+						}
+						has_global_flag = EoF_great_war_began
+					}
 					if = {
 						limit = {
 							tag = event_target:equestria
 						}
 						NOT = { has_country_flag = economic_laws_blocked }
-						has_war_with = CHN
 					}
 					if = {
 						limit = {
@@ -813,6 +834,12 @@ ideas = {
 					NOT = {
 						has_country_flag = ZES_pasarinha_economy_block
 					}
+				}
+				if = {
+					limit = {
+						tag = WNG
+					}
+					has_global_flag = EoF_tarrin_war_threat
 				}
 			}
 

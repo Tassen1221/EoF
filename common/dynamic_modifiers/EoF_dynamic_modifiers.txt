@@ -83,3 +83,75 @@ EoF_northern_equus_invasion_terrain_8 = {
 	army_core_attack_factor = 0.8
 	army_core_defence_factor = 0.8
 }
+EoF_HIP_invasion_terrain_0 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0
+	army_core_attack_factor = 0
+	army_core_defence_factor = 0
+}
+EoF_HIP_invasion_terrain_1 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0.05
+	army_core_attack_factor = 0.1
+	army_core_defence_factor = 0.1
+}
+EoF_HIP_invasion_terrain_2 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0.1
+	army_core_attack_factor = 0.2
+	army_core_defence_factor = 0.2
+}
+EoF_HIP_invasion_terrain_3 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0.15
+	army_core_attack_factor = 0.3
+	army_core_defence_factor = 0.3
+}
+EoF_HIP_invasion_terrain_4 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0.2
+	army_core_attack_factor = 0.4
+	army_core_defence_factor = 0.4
+}
+EoF_HIP_invasion_terrain_5 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0.25
+	army_core_attack_factor = 0.5
+	army_core_defence_factor = 0.5
+}
+EoF_HIP_invasion_terrain_6 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0.3
+	army_core_attack_factor = 0.6
+	army_core_defence_factor = 0.6
+}
+EoF_HIP_invasion_terrain_7 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0.35
+	army_core_attack_factor = 0.7
+	army_core_defence_factor = 0.7
+}
+EoF_HIP_invasion_terrain_8 = {
+	icon = GFX_idea_generic_wall_line
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0.4
+	army_core_attack_factor = 0.8
+	army_core_defence_factor = 0.8
+}

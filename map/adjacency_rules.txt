@@ -203,3 +203,120 @@ adjacency_rule =
     icon = 20202
     offset = { -4 0 0 }
 }
+# North Seaquestrian Strait
+adjacency_rule =
+{
+    name = "NORTH_SEAQUESTRIAN_STRAIT"
+    
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+    
+    required_provinces = { 18748 18743 }
+    
+    icon = 7384
+    offset = { -14 0 19 }
+}
+# South Seaquestrian Strait
+adjacency_rule =
+{
+    name = "SOUTH_SEAQUESTRIAN_STRAIT"
+    
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+    
+    required_provinces = { 20735 18645 }
+    
+    icon = 7978
+    offset = { 0 0 0 }
+}
+# Dazzhip Strait
+adjacency_rule =
+{
+    name = "DAZZHIP_STRAIT"
+    
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+    
+    required_provinces = { 20729 15898 }
+    
+    icon = 5457
+    offset = { -28 0 0 }
+}

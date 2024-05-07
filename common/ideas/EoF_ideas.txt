@@ -95,6 +95,14 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 			}
 		}
+		EoF_naval_expansion = {
+			removal_cost = -1
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_dockyard_factor = 0.3
+			}
+		}
 	
 		EoF_united_front = {
 			removal_cost = -1

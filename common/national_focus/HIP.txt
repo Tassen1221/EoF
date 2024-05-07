@@ -20,7 +20,7 @@ focus_tree = {
 	shared_focus = HIP_harmonist_defeat # will be moved to own tree once development done
 	shared_focus = HIP_harmonist_victory # will be moved to own tree once development done
 	shared_focus = HIP_aris_eternal
-	# shared_focus = EoF_HIP_war_begins
+	shared_focus = EoF_HIP_war_begins
 }
 
 focus_tree = {
@@ -226,370 +226,494 @@ focus_tree = {
 }
 
 	#EoF Changes
-	# shared_focus = {
-	# 	id = EoF_HIP_war_begins
-	# 	icon = GFX_goal_generic_major_war
-	# 	cost = 10
-	# 	x = -10
-	# 	y = 0
-	# 	relative_position_id = HIP_plecate_the_isolationists
+	shared_focus = {
+		id = EoF_HIP_war_begins
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = -10
+		y = 0
+		relative_position_id = HIP_plecate_the_isolationists
 
-	# 	available = {
-	# 		has_war = yes
-	# 	}
+		available = {
+			has_war_with = JER
+		}
 
-	# 	completion_reward = {
-	# 		two_random_industrial_complex = yes
-	# 		two_random_industrial_complex = yes
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_situation_bad
-	# 	icon = GFX_goal_generic_attack_allies
-	# 	cost = 5
-	# 	x = -3
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_war_begins
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_situation_bad
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = EoF_HIP_war_begins
 
-	# 	mutually_exclusive = {
-	# 		focus = EoF_HIP_first_year
-	# 	}
+		mutually_exclusive = {
+			focus = EoF_HIP_first_year
+		}
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_war_begins
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_war_begins
+		}
 
-	# 	available = {
-	# 		OR = {
-	# 			has_idea = HIP_island_buff6
-	# 			has_idea = HIP_island_buff7
-	# 			has_idea = HIP_island_buff8
-	# 		}
-	# 	}
+		available = {
+			any_core_state = {
+				OR = {
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_0
+					}
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_1
+					}
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_2
+					}
+				}
+			}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	completion_reward = {
-	# 		every_core_state = {
-	# 			limit = {
-	# 				is_in_home_area = yes
-	# 			}
-	# 			add_building_construction = {
-	# 				type = bunker
-	# 				level = 3
-	# 				instant_build = yes
-	# 				province = {
-	# 					all_provinces = yes
-	# 					limit_to_naval_base = yes
-	# 				}
-	# 			}
-	# 			add_building_construction = {
-	# 				type = coastal_bunker
-	# 				level = 3
-	# 				instant_build = yes
-	# 				province = {
-	# 					all_provinces = yes
-	# 					limit_to_naval_base = yes
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_prepare_worst
-	# 	icon = GFX_goal_generic_more_territorial_claims
-	# 	cost = 5
-	# 	x = 0
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_situation_bad
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_prepare_worst
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = EoF_HIP_situation_bad
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_situation_bad
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_situation_bad
+		}
 
-	# 	available = {
-	# 		has_equipment = {
-	# 			infantry_equipment > 9999
-	# 		}
-	# 	}
+		available = {
+			has_equipment = {
+				infantry_equipment > 9999
+			}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	completion_reward = {
-	# 		add_equipment_to_stockpile = {
-	# 			type = infantry_equipment
-	# 			amount = -10000
-	# 		}
-	# 		add_ideas = EoF_HIP_armed_citizens
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_last_stand
-	# 	icon = GFX_goal_generic_propaganda
-	# 	cost = 5
-	# 	x = 0
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_prepare_worst
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -10000
+			}
+			add_ideas = EoF_HIP_armed_citizens
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_last_stand
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = EoF_HIP_prepare_worst
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_prepare_worst
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_prepare_worst
+		}
 
-	# 	completion_reward = {
-	# 		1165 = {
-	# 			add_building_construction = {
-	# 				type = bunker
-	# 				level = 10
-	# 				instant_build = yes
-	# 				province = 5278
-	# 			}
-	# 			add_building_construction = {
-	# 				type = bunker
-	# 				level = 10
-	# 				instant_build = yes
-	# 				province = 19886
-	# 			}
-	# 			add_building_construction = {
-	# 				type = bunker
-	# 				level = 10
-	# 				instant_build = yes
-	# 				province = 18691
-	# 			}
-	# 		}
-	# 		random_owned_controlled_state = {
-	# 			limit = {
-	# 				is_core_of = HIP
-	# 				arms_factory > 1
-	# 			}
-	# 			remove_building = {
-	# 				type = arms_factory
-	# 				level = 2
-	# 			}
-	# 			HIP = {
-	# 				add_offsite_building = { 
-	# 					type = arms_factory 
-	# 					level = 2 
-	# 				}
-	# 			}  
-	# 		}
-	# 		random_owned_controlled_state = {
-	# 			limit = {
-	# 				is_core_of = HIP
-	# 				arms_factory > 1
-	# 			}
-	# 			remove_building = {
-	# 				type = arms_factory
-	# 				level = 2
-	# 			}
-	# 			HIP = {
-	# 				add_offsite_building = { 
-	# 					type = arms_factory 
-	# 					level = 2 
-	# 				}
-	# 			}  
-	# 		}
-	# 		random_owned_controlled_state = {
-	# 			limit = {
-	# 				is_core_of = HIP
-	# 				arms_factory > 1
-	# 			}
-	# 			remove_building = {
-	# 				type = arms_factory
-	# 				level = 2
-	# 			}
-	# 			HIP = {
-	# 				add_offsite_building = { 
-	# 					type = arms_factory 
-	# 					level = 2 
-	# 				}
-	# 			}  
-	# 		}
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_first_year
-	# 	icon = GFX_goal_support_democracy
-	# 	cost = 5
-	# 	x = 0
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_war_begins
+		completion_reward = {
+			1165 = {
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = 5278
+				}
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = 19886
+				}
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = 18691
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = HIP
+					arms_factory > 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				HIP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 3
+					}
+				}  
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = HIP
+					arms_factory > 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				HIP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 3
+					}
+				}  
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = HIP
+					arms_factory > 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				HIP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 3
+					}
+				}  
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = HIP
+					arms_factory > 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				HIP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 3
+					}
+				}  
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = HIP
+					arms_factory > 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				HIP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 3
+					}
+				}  
+			}
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_first_year
+		icon = GFX_goal_support_democracy
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = EoF_HIP_war_begins
 
-	# 	mutually_exclusive = {
-	# 		focus = EoF_HIP_situation_bad
-	# 	}
+		mutually_exclusive = {
+			focus = EoF_HIP_situation_bad
+		}
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_war_begins
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_war_begins
+		}
 
-	# 	available = {
-	# 		date > 1012.01.01
-	# 	}
+		available = {
+			war_length_with = {
+				tag = JER
+				months > 11
+			}
+		}
 
-	# 	completion_reward = {
-	# 		add_stability = 0.2
-	# 		add_ideas = EoF_HIP_primo_victoria_initial
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_situation_stable
-	# 	icon = GFX_goal_generic_defence
-	# 	cost = 10
-	# 	x = -1
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_first_year
+		completion_reward = {
+			add_stability = 0.2
+			add_ideas = EoF_HIP_primo_victoria_initial
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_situation_stable
+		icon = GFX_goal_generic_defence
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = EoF_HIP_first_year
 
-	# 	mutually_exclusive = {
-	# 		focus = EoF_HIP_situation_good
-	# 	}
+		mutually_exclusive = {
+			focus = EoF_HIP_situation_good
+		}
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_first_year
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_first_year
+		}
 
-	# 	available = {
-	# 		OR = {
-	# 			has_idea = HIP_island_buff3
-	# 			has_idea = HIP_island_buff4
-	# 			has_idea = HIP_island_buff5
-	# 		}
-	# 	}
+		available = {
+			any_core_state = {
+				OR = {
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_3
+					}
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_4
+					}
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_5
+					}
+				}
+			}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	completion_reward = {
-	# 		add_ideas = EoF_HIP_situation_stable_army
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_situation_good
-	# 	icon = GFX_goal_generic_demand_territory
-	# 	cost = 10
-	# 	x = 1
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_first_year
+		completion_reward = {
+			add_ideas = EoF_HIP_situation_stable_army
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_situation_good
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = EoF_HIP_first_year
 
-	# 	mutually_exclusive = {
-	# 		focus = EoF_HIP_situation_stable
-	# 	}
+		mutually_exclusive = {
+			focus = EoF_HIP_situation_stable
+		}
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_first_year
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_first_year
+		}
 
-	# 	available = {
-	# 		OR = {
-	# 			has_idea = HIP_island_buff1
-	# 			has_idea = HIP_island_buff2
-	# 		}
-	# 	}
+		available = {
+			any_core_state = {
+				OR = {
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_6
+					}
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_7
+					}
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_8
+					}
+				}
+			}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	completion_reward = {
-	# 		add_ideas = EoF_HIP_situation_good_army
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_counter_attack
-	# 	icon = GFX_goal_generic_amphibious_assault
-	# 	cost = 10
-	# 	x = 1
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_situation_stable
+		completion_reward = {
+			add_ideas = EoF_HIP_situation_good_army
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_counter_attack
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = EoF_HIP_situation_stable
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_situation_stable
-	# 		focus = EoF_HIP_situation_good
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_situation_stable
+			focus = EoF_HIP_situation_good
+		}
 
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = EoF_HIP_counter_attack_tt
-	# 		hidden_effect = {
-	# 			HIP = {
-	# 				country_event = ww.13
-	# 			}
-	# 			if = {
-	# 				limit = {
-	# 					has_completed_focus = EoF_HIP_situation_good
-	# 				}
-	# 				HIP = {
-	# 					country_event = ww.13
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_primo_victoria
-	# 	icon = GFX_goal_generic_territory_or_war
-	# 	cost = 5
-	# 	x = 0
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_counter_attack
+		completion_reward = {
+			custom_effect_tooltip = EoF_HIP_counter_attack_tt
+			hidden_effect = {
+				HIP = {
+					country_event = EoF.9
+				}
+				if = {
+					limit = {
+						has_completed_focus = EoF_HIP_situation_good
+					}
+					HIP = {
+						country_event = EoF.9
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_primo_victoria
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = EoF_HIP_counter_attack
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_counter_attack
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_counter_attack
+		}
 
-	# 	available = {
-	# 		697 = {
-	# 			is_controlled_by = HIP
-	# 		}
-	# 	}
+		available = {
+			775 = {
+				is_controlled_by = HIP
+			}
+			784 = {
+				is_controlled_by = HIP
+			}
+			1200 = {
+				is_controlled_by = HIP
+			}
+			any_core_state = {
+				OR = {
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_6
+					}
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_7
+					}
+					has_dynamic_modifier = {
+						modifier = EoF_HIP_invasion_terrain_8
+					}
+				}
+			}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	completion_reward = {
-	# 		swap_ideas = {
-	# 			remove_idea = EoF_HIP_primo_victoria_initial
-	# 			add_idea = EoF_HIP_primo_victoria_final
-	# 		}
-	# 	}
-	# }
-	# shared_focus = {
-	# 	id = EoF_HIP_naval_race
-	# 	icon = GFX_focus_generic_refit_civilian_ships
-	# 	cost = 5
-	# 	x = 3
-	# 	y = 1
-	# 	relative_position_id = EoF_HIP_war_begins
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = EoF_HIP_primo_victoria_initial
+				add_idea = EoF_HIP_primo_victoria_final
+			}
+			unlock_decision_tooltip = EoF_HIP_form_domination
+		}
+	}
+	shared_focus = {
+		id = EoF_HIP_naval_race
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = EoF_HIP_war_begins
 
-	# 	prerequisite = {
-	# 		focus = EoF_HIP_war_begins
-	# 	}
+		prerequisite = {
+			focus = EoF_HIP_war_begins
+		}
 
-	# 	available = {
-	# 		num_of_naval_factories < 30
-	# 		CTH = {
-	# 			num_of_naval_factories > 50
-	# 		}
-	# 	}
+		available = {
+			naval_strength_comparison = {
+				other = JER
+				ratio < 0.5
+				sub_unit_def_weights = {
+					carrier = 16
+					battleship = 8
+					battlecruiser = 8
+					heavy_cruiser = 4
+					light_cruiser = 2
+					destroyer = 1
 
-	# 	completion_reward = {
-	# 		every_core_state = {
-	# 			limit = {
-	# 				is_in_home_area = yes
-	# 				is_coastal = yes
-	# 			}
-	# 			add_extra_state_shared_building_slots = 3
-	# 		}
-	# 		add_timed_idea = {
-	# 			idea = EoF_HIP_naval_focused
-	# 			days = 180
-	# 		}
-	# 	}
-	# }
+				}
+			}
+		}
+
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_in_home_area = yes
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = EoF_HIP_naval_focused
+				days = 250
+			}
+		}
+	}
 	#EoF Changes
 
 	#######################
@@ -877,7 +1001,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_the_mountain_awakes
 		icon = GFX_HIP_gawake
-		cost = 6
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = HIP_leand_lease
@@ -935,48 +1059,6 @@ focus_tree = {
 			OR = {
 				has_war = yes
 				has_completed_focus = HIP_stirring_from_slumber
-				any_of_potential_and_current_enemies_justifying_or_has_wargoal_on_THIS = yes
-				AND = {
-					has_guaranteed = WAR
-					WAR = {
-						any_of_potential_and_current_enemies_justifying_or_has_wargoal_on_THIS = yes
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = HIP_mountain_awakes_trigger_tt
-					AND = {
-						TBK = {
-							OR = {
-								exists = no
-								is_subject_of = BAT
-								is_subject_of = CTH
-							}
-						}
-						ZAR = {
-							OR = {
-								exists = no
-								is_subject_of = BAT
-								is_subject_of = CTH
-								is_subject_of = TBK
-							}
-						}
-						WAR = {
-							OR = {
-								AND = {
-									exists = no
-									NOT = {
-										743 = {
-											is_owned_and_controlled_by = HIP
-										}
-									}
-								}
-								is_subject_of = BAT
-								is_subject_of = CTH
-								is_subject_of = TBK
-							}
-						}
-					}
-				}
 			}
 		}
 
@@ -2514,7 +2596,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_stirring_from_slumber
 		icon = GFX_goal_stirring_from_slumber
-		cost = 5
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = HIP_expand_refugee_zone
@@ -2529,16 +2611,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_war_support > 0.50
-				EQS = {
-					OR = {
-						has_war_with = CHN
-						exists = no
-						has_government = fascism
-					}
-				}
-			}
+			date > 1010.01.01
 		}
 
 		cancel_if_invalid = yes

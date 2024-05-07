@@ -1,16 +1,22 @@
 ideas = {
 	country = {
+		EoF_JER_armament = {
+			removal_cost = -1
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.3
+			}
+		}
 		EoF_griffonian_contender = {
 			removal_cost = -1
 			picture = FRA_la_deluge
 			modifier = {
 				conscription = 0.03
 				stability_factor = 0.1
-				war_support_factor = 0.2
-				consumer_goods_factor = -0.1
-				production_factory_max_efficiency_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_dockyard_factor = 0.3
+				war_support_factor = 0.1
 			}
 		}
 		EoF_griffonian_dominator = {
@@ -20,10 +26,6 @@ ideas = {
 				conscription = 0.03
 				stability_factor = 0.2
 				war_support_factor = 0.2
-				consumer_goods_factor = -0.25
-				production_factory_max_efficiency_factor = 0.1
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
 			}
 		}
 		EoF_invasion_preparation = {

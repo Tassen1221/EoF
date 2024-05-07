@@ -1851,7 +1851,7 @@ shared_focus = {
 	cancel_if_invalid = no
 	continue_if_invalid = yes
 	available = {
-		has_war = yes
+		has_global_flag = EoF_great_war_began
 	}
 	bypass = {
 		hidden_trigger = { is_EQS_SOL = yes }

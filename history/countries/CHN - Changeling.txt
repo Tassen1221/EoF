@@ -401,6 +401,7 @@ recruit_character = CHN_recina
 recruit_character = CHN_qwiksis
 recruit_character = CHN_jachs
 recruit_character = CHN_alcippe
+recruit_character = CHN_kitu
 #Military Advisors
 recruit_character = CHN_chnkommandant0
 recruit_character = CHN_chnkommandant1
@@ -429,6 +430,9 @@ recruit_character = CHN_spymaster
 recruit_character = CHN_midas_the_golden_lord
 
 create_faction = changeling_hegemony
+add_to_faction = PLB
+add_to_faction = GRF
+add_to_faction = FAT
 
 set_rule = {
 	can_generate_female_aces = yes

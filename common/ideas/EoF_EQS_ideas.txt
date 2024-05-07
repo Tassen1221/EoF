@@ -4,27 +4,27 @@ ideas = {
 			removal_cost = -1
 			picture = undisturbed_isolation
 			modifier = {
-				stability_factor = -0.3
-				consumer_goods_factor = 0.15
-				local_resources_factor = -0.15
-				production_factory_max_efficiency_factor = -0.075
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = 0.35
+				stability_factor = -0.25
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.25
+				production_factory_max_efficiency_factor = -0.125
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = 0.5
 			}
 			targeted_modifier = {
 				tag = CHN
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.125
+				defense_bonus_against = -0.125
 			}
 			targeted_modifier = {
 				tag = PLB
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.125
+				defense_bonus_against = -0.125
 			}
 			targeted_modifier = {
 				tag = GRF
-				attack_bonus_against = -0.075
-				defense_bonus_against = -0.075
+				attack_bonus_against = -0.125
+				defense_bonus_against = -0.125
 			}		
 		}
 		EoF_EQS_southern_island_campaign_1 = {
@@ -32,119 +32,113 @@ ideas = {
 			picture = undisturbed_isolation
 			modifier = {
 				stability_factor = -0.2
-				consumer_goods_factor = 0.1
-				local_resources_factor = -0.1
-				production_factory_max_efficiency_factor = -0.05
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = 0.3
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = 0.4
 			}
 			targeted_modifier = {
 				tag = CHN
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = PLB
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 			targeted_modifier = {
 				tag = GRF
-				attack_bonus_against = -0.05
-				defense_bonus_against = -0.05
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}			
 		}
 		EoF_EQS_southern_island_campaign_2 = {
 			removal_cost = -1
 			picture = undisturbed_isolation
 			modifier = {
-				stability_factor = -0.1
-				consumer_goods_factor = 0.05
-				local_resources_factor = -0.05
-				production_factory_max_efficiency_factor = -0.025
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = 0.25
+				stability_factor = -0.15
+				consumer_goods_factor = 0.15
+				local_resources_factor = -0.15
+				production_factory_max_efficiency_factor = -0.075
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = 0.3
 			}
 			targeted_modifier = {
 				tag = CHN
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
 			}
 			targeted_modifier = {
 				tag = PLB
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
 			}
 			targeted_modifier = {
 				tag = GRF
-				attack_bonus_against = -0.025
-				defense_bonus_against = -0.025
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
 			}			
 		}
 		EoF_EQS_southern_island_campaign_3 = {
 			removal_cost = -1
 			picture = undisturbed_isolation
 			modifier = {
-				stability_factor = 0
-				consumer_goods_factor = 0
-				local_resources_factor = 0
-				production_factory_max_efficiency_factor = 0
-				industrial_capacity_factory = 0
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = 0.2
-			}		
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = PLB
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = GRF
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}	
 		}
 		EoF_EQS_southern_island_campaign_4 = {
 			removal_cost = -1
 			picture = undisturbed_isolation
 			modifier = {
-				stability_factor = 0.1
-				consumer_goods_factor = -0.05
-				local_resources_factor = 0.05
-				production_factory_max_efficiency_factor = 0.025
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.15
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+				local_resources_factor = -0.05
+				production_factory_max_efficiency_factor = -0.025
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = 0.1
 			}
 			targeted_modifier = {
 				tag = CHN
-				attack_bonus_against = 0.025
-				defense_bonus_against = 0.025
+				attack_bonus_against = -0.025
+				defense_bonus_against = -0.025
 			}
 			targeted_modifier = {
 				tag = PLB
-				attack_bonus_against = 0.025
-				defense_bonus_against = 0.025
+				attack_bonus_against = -0.025
+				defense_bonus_against = -0.025
 			}
 			targeted_modifier = {
 				tag = GRF
-				attack_bonus_against = 0.025
-				defense_bonus_against = 0.025
+				attack_bonus_against = -0.025
+				defense_bonus_against = -0.025
 			}
 		}
 		EoF_EQS_southern_island_campaign_5 = {
 			removal_cost = -1
 			picture = undisturbed_isolation
 			modifier = {
-				stability_factor = 0.2
-				consumer_goods_factor = -0.1
-				local_resources_factor = 0.1
-				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-			}
-			targeted_modifier = {
-				tag = CHN
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
-			}
-			targeted_modifier = {
-				tag = PLB
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
-			}
-			targeted_modifier = {
-				tag = GRF
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
 			}		
 		}
 		EoF_EQS_warplan_1 = {
@@ -445,10 +439,10 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.002
 				war_support_weekly = -0.002
-				research_speed_factor = 0.05
-				industrial_capacity_factory = 0.05
-				production_speed_buildings_factor = 0.05
-				army_org_factor = 0.05
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.075
+				production_speed_buildings_factor = 0.075
+				army_org_factor = 0.075
 			}
 		}
 		EoF_talent_utilization = {
@@ -465,18 +459,18 @@ ideas = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.1
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 			}	
 		}
 		EoF_EQS_army_incompetence_2 = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.075
-				army_attack_factor = -0.075
-				army_defence_factor = -0.075
+				army_org_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
 			}		
 		}
 		EoF_EQS_army_incompetence_1 = {

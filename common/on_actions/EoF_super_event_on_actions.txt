@@ -12,19 +12,6 @@ on_actions = {
 			}
 		}
 	}
-	on_declare_war = { #Great War
-		effect = {
-			if = {
-				limit = {
-					tag = CHN
-					FROM = { tag = EQS }
-				}
-				every_country = {
-					set_country_flag = EoF_big_event_custom_great_war
-				}
-			}
-		}
-	}
 	on_state_control_changed = { #Sunset's Counteroffensive
 		effect = {
 			if = {
@@ -53,13 +40,14 @@ on_actions = {
 							state = 119
 							state = 114
 							state = 101
-							state = 2
-							state = 3
-							state = 104
-							state = 74
+							state = 68
+							state = 179
 							state = 178
-							state = 135
-							state = 134
+							state = 70
+							state = 148
+							state = 147
+							state = 144
+							state = 141
 						}
 					}
 				}
@@ -67,6 +55,19 @@ on_actions = {
 					set_country_flag = EoF_big_event_custom_sunset
 				}
 				set_global_flag = EoF_sunset_event_fired
+			}
+		}
+	}
+	on_declare_war = { #North Zebrica War
+		effect = {
+			if = {
+				limit = {
+					tag = ABY
+					FROM = { tag = HIP }
+				}
+				every_country = {
+					set_country_flag = EoF_big_event_custom_zebrica
+				}
 			}
 		}
 	}

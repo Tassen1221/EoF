@@ -130,7 +130,7 @@ shared_focus = {
 	relative_position_id = JER_fight_for_freedom
 	x = 5
 	y = 0
-	cost = 5
+	cost = 4.3
 	available = {
 		date > 1009.05.01
 	}
@@ -141,13 +141,14 @@ shared_focus = {
 			days = 365
 		}
 		hidden_effect = {
+			news_event = EoF.news.3
 			add_threat = 20
 		}
 	}
 }
 shared_focus = {
 	id = EoF_eastern_domination
-	icon = GFX_goal_jer_republicanism
+	icon = GFX_goal_JER_securing_greater_aquileia
 	prerequisite = { focus = EoF_invade_equestria }
 	relative_position_id = EoF_invade_equestria
 	x = 0
@@ -156,7 +157,7 @@ shared_focus = {
 	available = {
 		controls_state = 208
 		controls_state = 390
-		controls_state = 381
+		controls_state = 362
 	}
 	completion_reward = {
 		swap_ideas = {
@@ -164,6 +165,28 @@ shared_focus = {
 			add_idea = EoF_griffonian_dominator
 		}
 		unlock_decision_tooltip = EoF_JER_form_domination
+	}
+}
+shared_focus = {
+	id = EoF_invade_wingbardy
+	icon = GFX_goal_JER_strike_at_karthin
+	prerequisite = { focus = EoF_eastern_domination }
+	relative_position_id = EoF_eastern_domination
+	x = 0
+	y = 1
+	cost = 5
+	completion_reward = {
+		activate_mission_tooltip = EoF_JER_invade_wingbardy_mission
+		WNG = {
+			add_timed_idea = {
+				idea = EoF_WNG_militarization
+				days = 730
+			}
+		}
+		hidden_effect = {
+			news_event = EoF.news.4
+			set_global_flag = EoF_tarrin_war_threat
+		}
 	}
 }
 #EoF Changes
