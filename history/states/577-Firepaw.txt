@@ -11,8 +11,8 @@ state={
 	manpower=937709
 
 	history={
-		owner = RCT
-		add_core_of = RCT
+		owner = HLR
+		add_core_of = HLR
 
 		victory_points = { 10075 10 }
 		victory_points = { 1383 2 }

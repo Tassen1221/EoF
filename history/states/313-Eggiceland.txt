@@ -7,11 +7,27 @@ state={
 	}
 
 	manpower=148935
-	state_category = rural
+	state_category = metropolis
 	buildings_max_level_factor=1.00
 
 	history={
 		owner = CHN
 		add_core_of = CHN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 4
+			dockyard = 7
+			air_base = 1
+
+			11509 = {
+				naval_base = 5
+			}
+			
+			1485 = {
+				dam = 1
+			}
+		}
+	}
 	}
 }

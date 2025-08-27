@@ -11,8 +11,8 @@ state={
 	buildings_max_level_factor=3.00
 
 	history = {
-		owner = EQC
-		add_core_of = EQC
+		owner = GRF
+		add_core_of = GRF
 
 		victory_points = { 10522 5 }
 

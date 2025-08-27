@@ -1663,7 +1663,7 @@ shared_focus = {
 	x = 29
 	y = 1
 	available = {
-		has_war_support > 0.4
+		has_war_support > 0.35
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -1727,7 +1727,7 @@ shared_focus = {
 	available = {
 		date > 1009.01.01
 		OR = {
-			has_war_support > 0.65
+			has_war_support > 0.60
 			date > 1010.01.01
 		}
 	}

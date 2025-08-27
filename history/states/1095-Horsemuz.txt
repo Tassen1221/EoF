@@ -6,8 +6,8 @@ state={
 		18402 18436 18449 18454 18475 
 	}
 	history={
-		owner = MCW
-		add_claim_by = MCW
+		owner = HLR
+		add_claim_by = HLR
 		add_core_of = MCW
 		buildings = {
 			infrastructure = 2

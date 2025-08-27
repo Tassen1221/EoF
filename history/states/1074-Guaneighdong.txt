@@ -4,8 +4,8 @@ state={
 	name="STATE_1074"
 
 	history={
-		owner = KIR
-		add_core_of = KIR
+		owner = HLR
+		add_core_of = HLR
 		buildings = {
 			infrastructure = 1
 			#16653={

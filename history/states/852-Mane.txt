@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner = MCW
-		add_core_of = MCW
+		owner = HLR
+		add_core_of = HLR
 		buildings = {
 			infrastructure = 2
 

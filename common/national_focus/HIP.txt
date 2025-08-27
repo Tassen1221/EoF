@@ -30757,7 +30757,7 @@ shared_focus = {
 	relative_position_id = HIP_plecate_the_isolationists
 
 	available = {
-		has_war_with = JER
+		has_war_with = ABY
 	}
 
 	completion_reward = {
@@ -31020,7 +31020,7 @@ shared_focus = {
 
 	available = {
 		war_length_with = {
-			tag = JER
+			tag = ABY
 			months > 11
 		}
 		any_core_state = {

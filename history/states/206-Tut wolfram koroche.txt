@@ -16,7 +16,8 @@ state={
 	}
 
 	resources={
-		tungsten=480
-		chromium=150
+		tungsten=1500
+		chromium=600
+		steel= 400
 	}
 }

@@ -53,35 +53,35 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = CHN
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = PLB
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = GRF
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = FAT
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = JER
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = OLE
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = GRI
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = KIR
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			modifier = {
 				# local_resources_factor = 1

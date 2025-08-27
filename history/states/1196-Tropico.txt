@@ -8,8 +8,8 @@ state={
 		rubber=60
 	}
 	history={
-		owner = JER
-		add_core_of = JER
+		owner = CHN
+		add_core_of = CHN
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1

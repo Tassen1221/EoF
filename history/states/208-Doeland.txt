@@ -5,8 +5,8 @@ state={
 	
 
 	history={
-		owner = EQC
-		add_core_of = EQC
+		owner = HLR
+		add_core_of = HLR
 		add_core_of = TRD
 		victory_points = {
 			1792 3

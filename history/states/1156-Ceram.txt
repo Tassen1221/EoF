@@ -9,8 +9,8 @@ state={
 		rubber=50
 	}
 	history={
-		owner = WNG
-		add_core_of = WNG
+		owner = HLR
+		add_core_of = HLR
 		buildings = {
 			infrastructure = 0
 			20257 = { naval_base = 1 }			

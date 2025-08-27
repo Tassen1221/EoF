@@ -5637,6 +5637,10 @@ focus_tree = {
 				name = EoF_first_wesslandia_tension
 			}
 			country_event = EoF.6
+			puppet = GRF
+			GRF = {
+				set_cosmetic_tag = GRF_CHN
+			}
 		}
 	}
 	focus = {
@@ -5649,13 +5653,16 @@ focus_tree = {
 		relative_position_id = EoF_first_wesslandia_award
 		x = -1
 		y = 1
-		completion_reward = {
-			custom_effect_tooltip = EoF_polar_aid_tt
-			add_timed_idea = {
-				idea = EoF_CHN_PLB_investment
-				days = 365
+		Completion_reward = {
+		290 = {	add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
 			}
 		}
+		
+	  }
 	}
 	focus = {
 		id = EoF_second_wesslandia_award

@@ -11,8 +11,8 @@ state={
 	}
 
 	history = {
-		owner = WNG
-		add_core_of = WNG
+		owner = HLR
+		add_core_of = HLR
 		add_core_of = WNG
 
 		buildings = {

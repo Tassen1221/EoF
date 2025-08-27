@@ -11,8 +11,8 @@ state={
 	state_category=pastoral
 
 	history={
-		owner = WNG
-		add_core_of = WNG
+		owner = HLR
+		add_core_of = HLR
 
 		buildings = {
 			infrastructure = 1

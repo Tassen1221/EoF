@@ -6,8 +6,8 @@ state={
 		chromium=80.000
 	}
 	history={
-		owner = KIR
-		add_core_of = KIR
+		owner = HLR
+		add_core_of = HLR
 		buildings = {
 
 		}
